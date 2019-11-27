@@ -1,3 +1,3 @@
 # preprint-match
 
-Very much in progress, nothing to run for now.
+Matches BioRxiv preprints with their corresponding PubMed paper.
