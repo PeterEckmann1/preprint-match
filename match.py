@@ -5,13 +5,15 @@ import sys
 import requests
 import re
 import time
-import sqlite3
 from collections import Counter
 import os
 import pickle
-from sklearn import svm
+import scipy.sparse
+import numpy as np
+import bisect
+import warnings
 
-#FIX BOLD AND ITALICS IN PUBMED
+warnings.filterwarnings('ignore')
 
 STOPWORDS = set(nltk.corpus.stopwords.words('english'))
 
@@ -152,6 +154,22 @@ def get_preprint(doi, version):
 
     return preprint
 
+def vectorize_abstract(preprint, vocabulary):
+    vector = np.zeros((len(vocabulary), 1))
+    for word in preprint['abstract_vector'].keys():
+        i = bisect.bisect_left(vocabulary, word)
+        if i != len(vocabulary) and vocabulary[i] == word:
+            vector[i] = preprint['abstract_vector'][word]
+    return vector
+
+def vectorize_title_and_authors(words, vocabulary):
+    vector = np.zeros((len(vocabulary), 1))
+    for word in words:
+        i = bisect.bisect_left(vocabulary, word)
+        if i != len(vocabulary) and vocabulary[i] == word:
+            vector[i] = 1
+    return vector
+
 doi = sys.argv[1]
 version = sys.argv[2]
 if '--before' in sys.argv or '-b' in sys.argv:
@@ -167,67 +185,85 @@ model = pickle.load(f)
 f.close()
 
 max_val = -3
-max_test_val = -3
-max_test_triplet = []
-max_paper = {}
+max_pmid = ''
 
-announced = {}
-blank = {}
+vocabulary = []
+f = open('database/vocabulary/temp/abstract_vocabulary', 'rb')
+for line in f:
+    vocabulary.append(line.decode()[:-1])
+f.close()
+preprint_abstract = vectorize_abstract(preprint, vocabulary)
+
+vocabulary = []
+f = open('database/vocabulary/temp/title_vocabulary', 'rb')
+for line in f:
+    vocabulary.append(line.decode()[:-1])
+f.close()
+preprint_title = vectorize_title_and_authors(preprint['title'], vocabulary)
+
+vocabulary = []
+f = open('database/vocabulary/temp/authors_vocabulary', 'rb')
+for line in f:
+    vocabulary.append(line.decode()[:-1])
+f.close()
+preprint_authors = vectorize_title_and_authors(preprint['authors'], vocabulary)
+vocabulary = []
+
+abstract_norm = np.linalg.norm(preprint_abstract)
+title_sum = np.sum(preprint_title)
+authors_sum = np.sum(preprint_authors)
 
 print('Begin searching')
-for f_num, f in enumerate(os.listdir('database/pubmed3')):
-    print(f_num, '/', len(os.listdir('database/pubmed3')))
-    f = open('database/pubmed3/' + f, 'rb')
-    papers = pickle.load(f)
-    f.close()
-    triples = []
-    for paper in papers:
-        if paper['pmid'] == preprint['pubmed_pmid']:
-            announced = paper
-            print('announced score', combine(abstract_similarity(paper), author_similarity(paper), title_similarity(paper)), model.predict([[abstract_similarity(paper), author_similarity(paper), title_similarity(paper)]]))
+t = time.time()
+for i in range(0, int(len(os.listdir('database/matrices'))) * 100, 100):
+    try:
+        abstract_matrix = scipy.sparse.load_npz('database/matrices/abstract' + str(i) + '.npz')
+        title_matrix = scipy.sparse.load_npz('database/matrices/title' + str(i) + '.npz')
+        authors_matrix = scipy.sparse.load_npz('database/matrices/authors' + str(i) + '.npz')
+    except FileNotFoundError:
+        continue
 
-        if before and not(preprint['year'] <= paper['year'] and preprint['month'] <= paper['month'] and preprint['day'] < paper['day']):
-            continue
+    print(i)
 
-        if blank == {}:
-            blank = paper
-        triples.append([abstract_similarity(paper), author_similarity(paper), title_similarity(paper)])
-        val = combine(*triples[-1])
-        if val > max_test_val:
-            max_test_val = val
-            max_test_triplet = triples[-1]
+    abstract_vector = np.load('database/matrices/abstract' + str(i) + '_vector.npz')['arr_0']
+    title_vector = np.load('database/matrices/title' + str(i) + '_vector.npz')['arr_0']
+    authors_vector = np.load('database/matrices/authors' + str(i) + '_vector.npz')['arr_0']
 
+    abstract_sim = np.squeeze(abstract_matrix.dot(preprint_abstract)) / (abstract_norm * abstract_vector)
+    abstract_sim = np.nan_to_num(abstract_sim)
 
-    predictions = model.predict(triples)
+    dot = title_matrix.dot(preprint_title)
+    title_sim = np.squeeze(np.array(dot / (title_sum + title_vector - dot)))
+    title_sim = np.nan_to_num(title_sim)
+
+    dot = authors_matrix.dot(preprint_authors)
+    authors_sim = np.squeeze(np.array(dot / (authors_sum + authors_vector - dot)))
+    authors_sim = np.nan_to_num(authors_sim)
+
+    predictions = model.predict(np.array([abstract_sim, authors_sim, title_sim]).T)
     for paper_num, prediction in enumerate(predictions):
         if prediction:
             print('match')
-            paper = papers[paper_num]
-            val = combine(abstract_similarity(paper), author_similarity(paper), title_similarity(paper))
+            val = combine(abstract_sim[paper_num], authors_sim[paper_num], title_sim[paper_num])
             if val > max_val:
                 max_val = val
-                max_paper = paper
+                pmids = np.load('database/matrices/' + str(i) + '_pmids.npz')['arr_0']
+                max_pmid = pmids[paper_num]
 
-
-print('tests', max_test_triplet, max_test_val)
-if max_paper == {}:
+print(time.time() - t)
+if max_pmid == '':
     print('unpublished')
-    max_paper = blank
-
-if announced == {}:
-    print('unannounced')
-    announced = blank
     
-print('final', preprint['doi'], preprint['pubmed_pmid'], max_paper['pmid'], max_val)
+print('final', preprint['doi'], preprint['pubmed_pmid'], max_pmid, max_val)
 
 #preprint doi, preprint title, preprint abstract, preprint authors, announced pmid, announced title, announced abstract, announced authors, matched pmid, matched title, matched abstract, matched authors
-csv = [preprint['doi'], ' '.join(preprint['title']), preprint['abstract'], ','.join(preprint['authors']), announced['pmid'], ' '.join(announced['title']), announced['abstract'], ','.join(announced['authors']), max_paper['pmid'], ' '.join(max_paper['title']), max_paper['abstract'], ','.join(max_paper['authors'])]
-csv = ['"' + string.replace('"', "'") + '"' for string in csv]
-csv = ','.join(csv)
-csv = csv.replace('\n', '')
-print('csv', end=' ')
-for char in csv:
-    try:
-        print(char, end='')
-    except UnicodeEncodeError:
-        pass
+#csv = [preprint['doi'], ' '.join(preprint['title']), preprint['abstract'], ','.join(preprint['authors']), announced['pmid'], ' '.join(announced['title']), announced['abstract'], ','.join(announced['authors']), max_paper['pmid'], ' '.join(max_paper['title']), max_paper['abstract'], ','.join(max_paper['authors'])]
+#csv = ['"' + string.replace('"', "'") + '"' for string in csv]
+#csv = ','.join(csv)
+#csv = csv.replace('\n', '')
+#print('csv', end=' ')
+#for char in csv:
+#    try:
+#        print(char, end='')
+#    except UnicodeEncodeError:
+#        pass
