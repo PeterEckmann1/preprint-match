@@ -3,10 +3,13 @@ import sys
 import os
 import time
 
+try:
+    os.mkdir('results')
+except:
+    pass
+
 for f_name in os.listdir('matching/preprints'):
     os.remove('matching/preprints/' + f_name)
-for f_name in os.listdir('tests/test_preprints'):
-    os.remove('tests/test_preprints/' + f_name)
 for f_name in os.listdir('results'):
     os.remove('results/' + f_name)
 
@@ -43,6 +46,7 @@ time.sleep(1)
 if len(sys.argv) > 1 and (sys.argv[1] == '-t' or sys.argv[1] == '--test'):
     result_num = 0
     while len(os.listdir('tests/test_preprints')) > 0:
+        print(len(os.listdir('tests/test_preprints')))
         subprocess.call(['python', 'matching/match.py', '-t'])
         os.rename('results/results', 'results/results' + str(result_num))
         result_num += 1
