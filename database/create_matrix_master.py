@@ -5,6 +5,7 @@ import scipy.sparse
 import numpy as np
 
 os.system('del matrices\\*.npz')
+os.system('rm matrices/*.npz')
 
 running_procs = 0
 prev_file_count = 0

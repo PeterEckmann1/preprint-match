@@ -52,6 +52,7 @@ def download(num):
 
 
 os.system('del *.gz')
+os.system('rm *.gz')
 
 ps = []
 if len(sys.argv) > 1 and (sys.argv[1] == '-d' or sys.argv[1] == '--delete'):

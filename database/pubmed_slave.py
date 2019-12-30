@@ -99,7 +99,6 @@ for line in f:
 
 
 f.close()
-#ADD TO_DELETE FUNCTIONALITY
 final_papers = []
 for paper in papers:
     paper['title'] = tokenize_title(paper['title'])
