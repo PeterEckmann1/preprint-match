@@ -1,0 +1,955 @@
+towards unified theory efficient predictive sparse coding
+correlated light-serial scanning electron microscopy colssem ultrastructural visualization single neurons vivo
+selection constrains high rates satellite dna mutation daphnia pulex
+superposition survival curves tool epistasis analysis longevity interventions
+identifying genetic variants affect viability large cohorts
+programmable optical stimulator drosophila eye
+evidence genome editing mouse zygotes hek293t human cell line using dna-guided natronobacterium gregoryi argonaute ngago
+architecture dynamics overlapped rna regulatory networks
+mammal extinctions increasing isolation humans tree life
+recruitment crispr-cas systems tn7-like transposons
+homeodomain interacting protein kinase promotes tumorigenesis metastatic cell behavior
+ash dieback invasion europe founded two individuals native population huge adaptive potential
+integrative strategy identify entire protein coding potential prokaryotic genomes proteogenomics
+mea viewer high-performance interactive application visualizing electrophysiological data
+discrete coordinated encoding punishment contingent rewarded actions prefrontal cortex vta
+polarization effects calibration donut beam axial optical tweezers single-molecule force spectroscopy
+sequence male-specific genome region containing sex determination switch aedes aegypti
+undocumented potential primary productivity globally-distributed bacterial photoautotroph
+endogenous oxytocin vasopressin aggression domestic dogs
+tuning transcriptional regulation signaling predictive theory allosteric induction
+resident macrophages locally programmed silent clearance apoptotic cells
+webmev cloud platform analyzing visualizing cancer genomic data
+group-level progressive alterations brain connectivity patterns revealed diffusion-tensor brain networks across severity stages alzheimer  disease
+amyloid accumulation drives proteome-wide alterations mouse models alzheimer  disease like pathology
+viral apoptosis evasion via mapk pathway use host long noncoding rna
+diffusion ruler modeling kinesin diffusion length sensor intraflagellar transport
+rapid accurate approach prediction interactomes co-elution data prince
+integrated genomic analysis anaplastic meningioma identifies prognostic molecular signatures
+highly efficient site-specific mutagenesis malaria mosquitoes using crispr
+chromatin factor gon4l regulates embryonic axis extension promoting mediolateral cell polarity notochord boundary formation negative regulation cell adhesion
+intracellular bh3 profiling reveals shifts anti-apoptotic dependency b-cell maturation activation
+estimating genetic kin relationships prehistoric populations
+de novo discovery structural motifs rna 3d structures clustering
+identification visualisation differential isoform expression rna-seq time series
+discovery first genome-wide significant risk loci adhd
+pan-genome phylogeny bacillus cereus sensu lato
+ecological characterization infection anophelines diptera culicidae atlantic forest southeast brazil 10 year period behaviour autochthonous malaria vector changed
+growing microcolony survive support persistent propagation virulent phages
+physical boundaries public goods cooperation surface-attached bacterial cells
+integrated stress response pathway activates 4e-bp bias mrna translation boost antimicrobial peptide synthesis response bacterial infection
+gene networks provide high-resolution view bacteriophage ecology
+deep learning approach estimate collagenous tissue nonlinear anisotropic stress-strain responses microscopy images
+embryonic exposure valproic acid disrupts social predispositions newly-hatched chicks
+partitioning enhanced self-assembly actin polypeptide coacervates
+identification rab18 essential host factor bkpyv infection using whole genome rna interference screen
+distinct roles polarity factors boi1 boi2 control exocytosis abscission budding yeast
+feedforward inhibition allows input summation vary recurrent cortical networks
+functional selectivity face processing temporal voice area early deaf individuals
+polyclonal hiv envelope-specific breast milk antibodies limit founder shiv acquisition cell-associated virus loads infant rhesus monkeys
+ras-like gtpase rem2 potent endogenous inhibitor calcium/calmodulin-dependent kinase ii activity
+potential rapid genetic adaptation warming great barrier reef coral
+epidermal wnt signalling regulates transcriptome heterogeneity proliferative fate neighbouring cells
+gut microbiota burying beetle nicrophorus vespilloides provide colonization resistance larval bacterial pathogens
+correction copy number induced false positives crispr screens
+apkc-mediated displacement actomyosin-mediated retention polarize miranda drosophila neuroblasts
+crosslinkers drive brake cytoskeletal remodeling furrowing cytokinesis
+akt/pkb enhances non-canonical wnt signals compartmentalizing -catenin
+convergence wnt growth factor trimeric g protein signals daple
+efa6 regulates selective polarised transport axon regeneration axon initial segment
+centriole triplet microtubules required stable centriole formation inheritance human cells
+chromatin accessibility dynamics reveal novel functional enhancers c. elegans
+astrin-skap complex reconstitution reveals kinetochore interaction microtubule-bound ndc80
+evolutionary proteomics uncovers ciliary signaling components
+high-throughput assay identify robust inhibitors dynamin gtpase activity
+clostridium difficile colonizes alternative nutrient niches infection across distinct murine gut microbiomes
+cell type-specific expression profiling sheds light development peculiar neuron housing complex organelle
+coalescent prokaryotes homologous recombination external source
+post-transcriptional control coenzyme q biosynthesis revealed transomic analysis rna-binding protein puf3p
+distinct gut microbiome patterns associate consensus molecular subtypes colorectal cancer
+real-time detection condensin-driven dna compaction reveals multistep binding mechanism
+rna interference pathways display high rates adaptive protein evolution across multiple invertebrates
+stochastic model contact inhibition proliferation melanoma situ
+structural brain development review methodological approaches best practices
+antisocial rewarding structured populations
+transcriptome-wide analysis roles trna modifications translational regulation
+crispr-cpf1 mediates efficient homology-directed repair temperature-controlled genome editing
+genetic basis evolution red blood cell sickling deer
+reducing resistance allele formation crispr gene drives
+crispri strand-specific redefines transcriptional landscape
+differential mast cell outcomes sensitive fcri-syk binding kinetics
+xbra smad-1 response elements cooperate pv.1 promoter inhibit early neurogenesis xenopus embryos
+contribution trans regulatory eqtl cryptic genetic variation c. elegans
+genome reconstruction characterisation extensively drug-resistant bacterial pathogens direct metagenomic sequencing human faeces
+persistent homology demarcates leaf morphospace
+analysis copy number loss erbb4 receptor tyrosine kinase glioblastoma
+challenges estimating motility parametersn single processive motor proteins
+chiral selectivity relaxed paralog dtd proofreading trna mischarging animalia
+enterococcus faecalis pathogenic streptococci inactivate daptomycin releasing phospholipids
+k-mer clustering algorithm using mapreduce framework application parallelization inchworm module trinity
+multicenter randomized study decitabine epigenetic priming induction chemotherapy children aml
+incomplete dominance deleterious alleles contributes substantially trait variation heterosis maize
+bacterial lipopolysaccharide reduces stability avian human influenza viruses
+post-translational regulation metabolism fumarate hydratase deficient cancer cells
+decline malaria vietnam 1991-2014
+site specific model analysis neutral somatic mutation rate whole-genome cancer data
+differential activation fyn kinase distinguishes saturated unsaturated fats mouse macrophages
+mapping drivers within-host pathogen evolution using massive data sets
+non-parametric test connectivity detection multivariate autoregressive networks application multiunit activity data
+genetic mapping species differences via  vitro crosses  mouse embryonic stem cells
+feedback motif breaks fundamental limit noise suppression stabilize fate
+high contiguity arabidopsis thaliana genome assembly single nanopore flow cell
+multi-brct domain protein brc1 links rhp18/rad18 h2a maintain genome stability s-phase
+dopamine neuron dependent behaviors mediated glutamate cotransmission
+predicting double-strand dna breaks using epigenome marks dna kilobase resolution
+research synergy drug development bright stars neighboring constellations
+factornet deep learning framework predicting cell type specific transcription factor binding nucleotide-resolution sequential data
+reconstructing cancer karyotypes short read data half full half empty glass
+quantifying risk cost active monitoring infectious diseases
+fucci tracking shows neurog3 levels vary cell-cycle phase endocrine-biased pancreatic progenitors
+response microbial community function fluctuating geochemical conditions within legacy radioactive waste trench environment
+mechanism transcription start site selection
+synthesizing developmental trajectories
+computational investigation o2 diffusion intramolecular tunnel alkb influence polarization o2 transport
+natural variation stochastic photoreceptor specification color preference drosophila
+rhodosporidium toruloides new platform organism conversion lignocellulose terpene biofuels bioproducts
+cd55 regulates self-renewal cisplatin resistance endometrioid tumors
+laminar organization encoding memory reactivation parietal cortex
+effects mutational processes selection driver mutations across cancer types
+functional role epigenetic regulator ing1 activity-induced gene expression primary cortical neurons
+intrinsically disordered regions contribute promiscuous interactions rnp granule assembly
+construction soil defined media using quantitative exometabolomic analysis soil metabolites
+trim9-dependent ubiquitination dcc constrains kinase signaling exocytosis axon branching
+processing dynamic faces human brain support integrated neural framework face processing
+widespread translational remodeling human neuronal differentiation
+neurodynamics connectivity facial fear perception role threat exposure signal congruity
+boosting felsenstein  phylogenetic bootstrap
+selecting among three basic fitness landscape models additive multiplicative stickbreaking
+measuring protein binding lipid vesicles fluorescence cross-correlation spectroscopy
+impact fluorescent protein fusions bacterial flagellar motor
+comprehensive benchmarking ensemble approaches metagenomic classifiers
+mice lacking nf-b1 exhibit marked dna damage responses severe gastric pathology response intraperitoneal tamoxifen administration
+insula-central amygdala circuit behavioral inhibition
+transient exposure oxygen nitrate reveals ecophysiology fermentative sulfate-reducing benthic microbial populations
+second-generation method analysis chromatin binding using formaldehyde crosslinking kinetics
+drosophila formin fhod nucleates actin filaments
+coding sequence firefly luciferase reporter gene affects specific hyperexpression arabidopsis thaliana cpl1 mutant
+inducible reversible phenotypes novel mouse model friedreich  ataxia
+multivariate heteroscedasticity models functional brain connectivity
+non-latching positive feedback enables robust bimodality de-coupling expression noise mean
+engineering cell sensing responses using gpcr-coupled crispr-cas system
+allele specific expression analysis identifies regulatory variation associated stress-related genes mexican highland maize landrace palomero toluqueo
+adage signature analysis differential expression analysis data-defined gene sets
+high-resolution maps mouse reference populations
+nde1 genomic locus affect treatment psychiatric illness gene expression changes related microrna-484
+high-quality de novo genome assembly dekkera bruxellensis umy321 yeast isolate using nanopore minion sequencing
+inferring synteny genome assemblies systematic evaluation
+statistical correction winner  curse explains replication variability quantitative trait genome-wide association studies
+indecut evaluates performance network motif discovery algorithms
+repeat aware evaluation scaffolding tools
+giggle search engine large-scale integrated genome analysis
+structure misfolding flexible tripartite coiled coil domain glaucoma-associated myocilin
+distinct representations planned reach trajectories human premotor posterior parietal cortex
+olfactory vomeronasal innervation olfactory bulbs essential gnrh-1 neuronal migration brain
+deeparg deep learning approach predicting antibiotic resistance genes metagenomic data
+atp sensing living plant cells reveals tissue gradients stress dynamics energy physiology
+striatal fast-spiking interneurons drive habitual behavior
+patchwork contrasting medication cultures across usa
+automatic identification informative regions epigenomic changes associated hematopoiesis
+systematic identification novel regulatory interactions controlling biofilm formation bacterium escherichia coli
+graphi-c graph-based visualization hi-c datasets
+high density linkage map reveals sexual dimorphism recombination landscapes red deer cervus elaphus
+convergence topological domain boundaries insulators polytene interbands revealed high-resolution mapping chromatin contacts early drosophila melanogaster embryo
+comprehensive analysis rna-sequencing find source 1 trillion reads across diverse adult human tissues
+synaptic homeostasis drosophila neuromuscular junction reversible signaling process sensitive high temperature
+human primary motor cortex represent sequences finger movements
+resetting yeast epigenome human nucleosomes
+mechanisms transmission ratio distortion hybrid sterility loci within mimulus species
+predicting dna hybridization kinetics sequence
+metagenomics reveals niche partitioning within phototrophic zone microbial mat
+unleashing natural competence lactococcus lactis induction competence regulator comx
+mannitol/sorbitol receptor stimulates dietary intake tribolium castaneum
+collider scope selection bias substantially influence observed associations
+metagenomic characterization effect feed additives gut microbiome antibiotic resistome feedlot cattle
+decision decoding toolbox ddtbox  multivariate pattern analysis toolbox event-related potentials
+feedback inhibition ras activity coordinates cell fusion cell-cell contact
+dual role e-cadherin regulation invasive collective migration mammary carcinoma cells
+effective model retinoic acid induced hl-60 differentiation program
+differing strategies used motor neurons glia achieve robust development adult neuropil drosophila
+high-resolution mapping heteroduplex dna formed uv-induced spontaneous mitotic recombination events yeast
+cross-sectional study set shifting impairments falling individuals without parkinson  disease
+approximate inference gene regulatory network models rna-seq time series data
+performance assessment relatedness inference methods using genome-wide data thousands relatives
+post-transcriptional modulation dscam1 enhances axonal growth development injury
+icm conversion epiblast fgf/erk inhibition limited time requires transcription protein degradation
+swell1 glucose sensor required -cell excitability insulin secretion
+insm1a regulates motor neuron development zebrafish
+cross-tissue integration genetic epigenetic data offers insight autism spectrum disorder
+3-integrin endothelial adhesome regulates microtubule dependent cell migration
+novel co-culture plate enables growth dynamic-based assessment contact-independent microbial interactions
+null findings falsify prefrontal theories conscious perception
+global cancer transcriptome quantifies repeat element polarization immunotherapy responsive cell suppressive classes
+n- 3-oxododecanoyl -l-homoserine lactone interactions breast tumor microenvironment implications breast cancer viability proliferation vitro
+dynamic interactions top-down expectations conscious awareness
+structural-mechanical remodelling gdp-microtubules kinesin
+cerebellar mechanism learning prior distributions time intervals
+variation microbiome urogenital tract female koalas phascolarctos cinereus without  wet bottom 
+isolation semi quantitative pcr na+/h+ antiporter sos1 amp amp nhx genes salinity stress kochia scoparia
+quantitative systems pharmacology analysis kras g12c covalent inhibitors
+language oscillogenome
+legionella becoming mutualist adaptive processes shaping genome symbiont louse polyplax serrata
+reflective imaging improves resolution speed collection efficiency light sheet microscopy
+standing balance assessment using head-mounted wearable device
+reference quality assembly 3.5 gb genome capsicum annuum single linked-read library
+distinct solubility cytotoxicity regimes paclitaxel-loaded cationic liposomes low high drug content revealed kinetic phase behavior cancer cell viability studies
+simextargid r package real-time lc-ms metabolomic data analysis instrument failure/drift notification ms2 target identification
+visual experience shapes neural networks remapping touch external space
+mimosa method inter-modal segmentation analysis
+magnetic entropy gating mechanism magnetogenetic ion channels
+intracellular pathogen response pathway promotes proteostasis c. elegans
+phenotypic consequences rna polymerase dysregulation escherichia coli
+recipient-biased competition cross-fed nutrient required coexistence microbial mutualists
+brain-derived neurotrophic factor derived peripheral sensory neurons plays critical role pain chronification
+gating mass cytometry data deep learning
+maternal loading small heat shock protein increases embryo thermal tolerance drosophila melanogaster
+preferential targeting lateral entorhinal inputs onto newly integrated granule cells
+tdcs changes motor excitability specific orientation current flow
+instantaneous brain dynamics mapped continuous state space
+silver fluoride treatment disease dental caries
+lpp3 mediates self-generation chemotactic lpa gradients melanoma cells
+assembling metagenomes one community time
+bulky glycocalyx fosters metastasis formation promoting g1 cell cycle progression
+critical assessment metagenome interpretation  benchmark computational metagenomics software
+niche neutral processes shape community structure parallelized aerobic single carbon-source enrichments
+molybdenum-based diazotrophy sphagnum peatland northern minnesota
+multi-omic mitoprotease profiling defines role oct1p coenzyme q production
+meld mixed effects large datasets
+effective online bayesian phylogenetics via sequential monte carlo guided proposals
+molecular chaperones maximize native state yield per unit time driving substrates equilibrium
+genome-wide analysis uk biobank identifies four loci associated mood instability genetic correlation major depressive disorder anxiety disorder schizophrenia
+dense bicoid hubs accentuate binding along morphogen gradient
+hammondia hammondi developmental program vitro mirrors stringent two host life cycle
+transcript isoform differences across human tissues predominantly driven alternative start termination sites transcription
+evolution drift robustness small populations
+neural stem cells induce formation physical niche organogenesis
+conserved noncoding transcription core promoter regulatory code early drosophila development
+emerging patterns plasmid-host coevolution stabilize antibiotic resistance
+multiplex staining sequential immunostaining antibody removal routine tissue sections
+birds swing multifractal analysis reveals expressive rhythm birdsong
+musical imagery involves wernicke  area bilateral anti-correlated network interactions musicians
+flexible control speed cortical dynamics
+mip-map high throughput mapping caenorhabditis elegans temperature sensitive mutants via molecular inversion probes
+multi-dimensional genomic analysis myoepithelial carcinoma identifies prevalent oncogenic gene fusions
+ruxolitinib partially reverses functional nk cell deficiency patients stat1 gain-of-function mutations
+single-cell anatomical blueprint intracortical information transfer primary visual cortex
+multiple conserved cell adhesion protein interactions mediate neural wiring sensory circuit c. elegans
+integration plasticity mechanisms within single sensory neuron c. elegans actuates memory
+dementia-associated risk variant near tmem106b alters chromatin architecture gene expression
+vivo magnetic recording neuronal activity
+refractoriness accounts variable spike burst responses somatosensory cortex
+bottled aqua incognita microbiota assembly dissolved organic matter diversity natural mineral waters
+hypoosmolar dose-dependent swelling occurs pyramidal neurons astrocytes acute hippocampal slices
+group nuclear factor transcription factors likely sub-functionalized endosperm development monocot
+speaq 2.0 complete workflow high-throughput 1d nmr spectra processing quantification
+double maternal effect duplicated nucleoplasmin 2 genes npm2a npm2b shared fish tetrapods distinct essential roles early embryogenesis
+probam probed standard formats enabling seamless integration genomics proteomics data
+foreground-background segmentation revealed natural image viewing
+openmm 7 rapid development high performance algorithms molecular dynamics
+visualizing long-term single-molecule dynamics vivo stochastic protein labeling
+outbreak pseudomonas aeruginosa infection linked  black friday  piercing event
+effects human-animal interaction dog salivary plasma oxytocin vasopressin
+sex differences gene regulation dorsal root ganglion nerve injury
+two phosphoglucomutase paralogs regulate triggered secretion toxoplasma micronemes
+bat detective deep learning tools bat acoustic signal detection
+genomic analysis family data reveals additional genetic effects intelligence personality
+systematic misperceptions 3d motion explained bayesian inference
+evidence cryptic incidence childhood diseases
+value dna methylation profiling characterizing preeclampsia intrauterine growth restriction
+natural genetic variation shapes root system responses phytohormones arabidopsis
+parp inhibition causes premature loss cohesion cancer cells
+controlling cell shape hydrogels using lift-off patterning
+coupling replisome movement nucleosome dynamics contribute parent-daughter information transfer
+mapping loci control tuber foliar symptoms caused pvy autotetraploid potato solanum tuberosum l
+dna isolation protocol effects nuclear dna analysis microarrays droplet digital pcr whole genome sequencing mitochondrial dna copy number estimation
+maternal bmi start pregnancy offspring epigenome-wide dna methylation findings pregnancy childhood epigenetics pace consortium
+input-specific nmdar-dependent potentiation dendritic gabaergic inhibition
+subcortical volume white matter integrity abnormalities major depressive disorder findings uk biobank imaging data
+astrocytes release prostaglandin e2 modify respiratory network activity
+comprehensive portrait cilia ciliopathies crispr-based screen hedgehog signaling
+hmmer cut-off threshold tool hmmerctter supervised classification superfamily protein sequences reliable cut-off threshold
+post-mortem molecular profiling three psychiatric disorders
+improving value public rna-seq expression data phenotype prediction
+morphometrics complex cell shapes lobe contribution elliptic fourier analysis loco-efa
+faster carbon accumulation global forest soils
+mrna detection budding yeast single fluorophores
+assay visualize specific protein oxidation reveals spatio-temporal regulation shp2
+significant associations driver gene mutations dna methylation alterations across many cancer types
+synthetic lethality cohesin subunits stag1 stag2 diverse cancer contexts
+principled multi-omic analysis reveals gene regulatory mechanisms phenotype variation
+dissecting super-enhancer hierarchy based chromatin interactions
+detecting repeated cancer evolution human tumours multi-region sequencing data
+health status gender hair color eye color red-haired women divergent lowest viability highest fertility
+positive feedback loop ensures propagation ros production jnk signaling throughout drosophila tissue regeneration
+platform efficient transgenesis macrostomum lignano flatworm model organism stem cell research
+higher levels grp78 lower levels tlr4 anticipate positive evolution sepsis patient survival
+lis1 two opposing modes regulating cytoplasmic dynein
+pals-22 member expanded c. elegans gene family controls silencing repetitive dna
+mcm10 functions isomerize cmg-dna replisome bypass dna blocks
+principles govern competition co-existence rho-gtpase driven polarization
+prediction rna-protein sequence structure binding preferences using deep convolutional recurrent neural networks
+biological classification rna-seq data alternative splicing enhance machine learning classifier
+reconstructing metazoan genetic pathway transcriptome-wide epistasis measurements
+segway 2.0 gaussian mixture models minibatch training
+high-na open-top selective-plane illumination microscopy biological imaging
+matryoshka ratiometric biosensors nested cassette green- orange-emitting fluorescent proteins
+guide analysis reconstruction serial block face scanning electron microscopy data
+impdh polymers accommodate catalytically active inactive conformations
+high resolution atlas gene expression domestic sheep ovis aries
+parallel evolution two clades major atlantic endemic vibrio parahaemolyticus pathogen lineage independent acquisition related pathogenicity islands
+genome-wide association admixture mapping study bronchodilator drug response african americans asthma
+umap bismap quantifying genome methylome mappability
+estimating short-term synaptic plasticity pre- postsynaptic spiking
+normal ca1 place fields discoordinated network discharge fmr1-null mouse model fragile x syndrome
+increased parb level affects expression stress response adaptation virulence operons potentiates repression promoters adjacent high affinity binding sites pars3 pars4 pseudomonas aeruginosa
+fitting mechanistic epidemic models data comparison simple markov chain monte carlo approaches
+dynamical predictors imminent phenotypic switch bacteria
+bearscc determines robustness single-cell clusters using simulated technical replicates
+efficient flp-based toolkit spatiotemporal control gene expression caenorhabditis elegans
+differential roles sleep spindles sleep slow oscillations memory consolidation
+social dilemma external immune system red flour beetle matter time
+fluidic microactuation flexible electrodes neural recording
+simulated climate change affects biocrusts modulate infiltration desiccation dynamics
+genomic variations paired normal controls lung adenocarcinomas
+non-canonical secondary structures arising non-b-dna motifs determinants mutagenesis
+seed size rate evolution correlate species diversification across angiosperms
+multilocus dna barcoding  species identification multilocus data
+spectrin mechanoresponsive protein shaping architecture intercellular invasion
+international risk yellow fever spread ongoing outbreak brazil
+neural correlates natural observation emotionally loaded video
+variable sensitivity dna damaging chemotherapeutic modulated cell type-dependent bimodal p53 dynamics
+fundamental constraints synchronous muscle limit superfast motor control vertebrates
+correlation analysis framework localization-based super-resolution microscopy
+sparse coding dimensionality reduction cortex
+clarinet cla-1 novel active zone protein required synaptic vesicle clustering release
+characterization sid-1-dependent independent intergenerational rna transport pathways caenorhabditis elegans
+dynamical networks finding measuring tracking neural population activity using network science
+vitro reconstitution cell receptormediated segregation cd45 phosphatase
+t-darpp elongated monomer binds calcium phosphorylated cyclin-dependent kinases 1 5
+rl-skat exact efficient score test heritability set tests
+detecting local zika virus transmission continental united states comparison surveillance strategies
+analysis aedes albopictus c6/36 genome provides insight cell line adaptations vitro viral propagation
+loss camki function disrupts salt aversive learning c. elegans
+computational approaches discovery mutational signatures cancer
+wdr5 stabilizes actin architecture promote multiciliated cell formation
+whole genome sequencing-based detection antimicrobial resistance virulence non-typhoidal salmonella enterica isolated wildlife
+stochastic early reaction inhibition late action seria model antisaccades
+evaluation rnai crispr technologies large-scale gene expression profiling connectivity map
+indexcov fast coverage quality control whole-genome sequencing
+anti-cancer binary system activated bacteriophage hk022 integrase
+new genes functional innovation mammals
+global biogeography since pangaea
+targeting pd-1/pd-l1 pathway potentiates immunoediting changes dynamics neutral evolution mouse model colorectal cancer
+patterns conservation diversification fungal polarization network
+model bilateral brown-type central pattern generator symmetric asymmetric locomotion
+de-novo assembly zucchini genome reveals whole genome duplication associated origin cucurbita genus
+integrating long-range connectivity information de bruijn graphs
+pfclpc essential clp chaperone required plastid integrity clp protease stability plasmodium falciparum
+isolated input evidence default mode network support perceptually-decoupled conceptually-guided cognition
+classifying drosophila olfactory projection neuron subtypes single-cell rna sequencing
+germline cas9 expression yields highly efficient genome engineering major worldwide disease vector aedes aegypti
+ phenotypic hangover   predictive adaptive response multigenerational effects altered nutrition transcriptome drosophila melanogaster
+selective constraints coding sequences nervous system genes major determinant duplicate gene retention vertebrates
+gelsolin regulates proliferation apoptosis invasion nk/t-cell lymphoma cells pi3k/akt signaling pathway
+new genus horse pleistocene north america
+neuron specific formin delphilin nucleates actin filaments enhance elongation
+bridging dynamics organization chromatin domains mathematical modeling
+addressing current challenges cancer immunotherapy mathematical computational modeling
+cooperative binding mitigates high-dose hook effect
+interplay demography selection maize domestication expansion
+sparse genetic tracing reveals regionally specific functional organization mammalian nociceptors
+increasingly inbred fragmented populations plasmodium vivax declining transmission
+pureclip capturing target-specific protein-rna interaction footprints single-nucleotide clip-seq data
+proteomic architecture human coronary aortic atherosclerosis
+sign selection mutation rate modifiers depends population size
+statistics simulation growth single bacterial cells illustrations b. subtilis e. coli
+ipsych2012 case-cohort sample new directions unravelling genetic environmental architectures severe mental disorders
+population-genomic inference strength timing selection gene flow
+multi-connection pattern analysis decoding representational content neural communication
+engagement spinal- vs prefrontal-projecting locus coeruleus neurons parses analgesia aversion amp amp anxiety rats
+dissection purified line-1 reveals distinct nuclear cytoplasmic intermediates
+structural basis regulation nucleo-cytoplasmic distribution bag6 trc35
+inter-organ regulation drosophila intestinal stem cell proliferation hybrid organ boundary zone
+project mine study design pilot analyses large-scale whole genome sequencing study amyotrophic lateral sclerosis
+removal inhibition uncovers latent movement potential preparation
+inferring multi-scale neural mechanisms brain network modelling
+characterization spectrally diverse set fluorescent proteins fret acceptors mturquoise2
+transgenic toolkit visualizing perturbing microtubules mice reveals unexpected functions non-centrosomal arrays epidermal morphogenesis
+intrinsic adaptive value early fate gene duplication revealed bottom-up approach
+bayesian comparison explicit implicit causal inference strategies multisensory heading perception
+fine scale mapping genomic introgressions within drosophila yakuba clade
+homology-based hydrogen bond information improves crystallographic structures pdb
+informatics cancer immunotherapy
+conflicting evolutionary histories mitochondrial nuclear genomes new world myotis bats
+fustr tool find gene families selection transcriptomes
+draft genome reindeer rangifer tarandus
+t-dependent b cell responses plasmodium induce antibodies form high-avidity multivalent complex circumsporozoite protein
+novel k-mer set memory ksm motif representation improves regulatory variant prediction
+morphological transcriptomic evidence ammonium induction sexual reproduction thalassiosira pseudonana centric diatoms
+frequency-dependent mobilization heterogeneous pools synaptic vesicles shapes presynaptic plasticity
+dual transcript-discovery approach improve delimitation gene features rna-seq data chicken model
+cofilin drives rapid turnover fluidization entangled f-actin
+live-cell mapping organelle-associated rnas via proximity biotinylation combined protein-rna crosslinking
+ufboot2 improving ultrafast bootstrap approximation
+mapping-free variant calling using haplotype reconstruction k-mer frequencies
+topical silver diamine fluoride dental caries arrest preschool children randomized controlled trial
+integrative method unravel host-parasite interactome orthology-based approach
+molecular evolution diversity adaptation h7n9 influenza viruses china
+oned increasing reproducibility hi-c samples abnormal karyotypes
+dna contact map mouse runx1 gene identifies novel hematopoietic enhancers
+single point mutation tssb/vipa homolog disrupts sheath formation type vi secretion system proteus mirabilis
+patternize r package quantifying color pattern variation
+pesticide paradox fungicides indirectly increase fungal infections
+subharmonics chaos simple periodically-forced biomolecular models
+stability commonly used hematological parameters samples stored 33c 22c 4c
+transit integration extracellular mitochondria human heart cells
+xcell digitally portraying tissue cellular heterogeneity landscape
+numa targets dynein microtubule minus-ends mitosis
+fine-mapping identifies causal variants ra t1d dnase1l3 sirpg meg3 tnfaip3 cd28/ctla4 loci
+evolutionarily young defense metabolite influences root growth plants via ancient tor signaling pathway
+discordant inheritance chromosomal extrachromosomal dna elements contributes dynamic disease evolution glioblastoma
+neurodegeneration-associated mutant trem2 proteins abortively cycle er ergolgi intermediate compartment
+obesity/type ii diabetes alters macrophage polarization resulting fibrotic tendon healing response
+esab core component staphylococcus aureus type vii secretion system
+highly parallel genome variant engineering crispr/cas9 eukaryotic cells
+simultaneous gcamp6-based fiber photometry fmri rats
+non-parametric genetic prediction complex traits latent dirichlet process regression models
+reduced chlorhexidine daptomycin susceptibility arises vancomycin-resistant enterococcus faecium serial chlorhexidine exposure
+genetic variation human drug-related genes
+influence aging mechanical stretch alveolar epithelium er stress inflammation
+campylobacter jejuni transcriptome changes loss culturability water
+positional effects revealed illumina methylation array impact analysis
+accurate fast feature selection workflow high-dimensional omics data
+network integration multi-tumour omics data suggests novel targeting strategies
+genetic drift selection many-allele range expansions
+bpg seamless automated interactive visualization scientific data
+scalable efficient single-cell dna methylation sequencing combinatorial indexing
+low dimensional morphospace topological motifs human fmri brain networks
+ultrafast comparison personal genomes
+unintended consequences paradox control management emerging pathogens age-specific virulence
+reminders past choices bias decisions reward humans
+reconstructing cell cycle disease progression using deep learning
+systems-level annotation metabolomics data reduces 25,000 features fewer 1,000 unique metabolites
+modulation ether--go-go related gene erg current governs intrinsic persistent activity rodent neocortical pyramidal cells
+cancer genome interpreter annotates biological clinical relevance tumor alterations
+evolution gene expression whole-genome duplication new insights spotted gar genome
+genetic identification brain cell types underlying schizophrenia
+transcription factor target gene network governs logical abstraction analysis synthetic circuit leishmaniasis
+harmonization cortical thickness measurements across scanners sites
+feminizing wolbachia endosymbiont disrupts maternal sex chromosome inheritance butterfly species
+cross-species chromosome function malaria vectors anopheles gambiae species complex
+phylogeographic separation formation sexually discrete lineages global population yersinia pseudotuberculosis
+accessible curated metagenomic data experimenthub
+combined social spatial coding descending projection prefrontal cortex
+model-free method measuring dimerization free energies clc-ec1 lipid bilayers
+identification uterine pacemaker regions myometrial-placental interface
+inferring single-trial neural population dynamics using sequential auto-encoders
+humanization srgap2c expression increases cortico-cortical connectivity reliability sensory-evoked responses mouse brain
+ectopic hcn4 expression drives mtor-dependent epilepsy
+suppression dsb formation pol active dna demethylation required postnatal hippocampal development
+bag3 pro209 mutants associated myopathy neuropathy sequester chaperones casa-complex aggresomes
+fibrinolytic activity matrix metalloprotease-1
+push-to-open gating mechanism tethered mechanosensitive ion channel nompc
+molecular mechanisms behind global distribution earthworm revealed genome
+spexin novel cichlid-specific spexin paralog inhibit fsh lh specific galanin receptor galr2b tilapia
+screening platform based epitope editing drug discovery
+high throughput screening membrane interface reveals new inhibitors amyloid-
+nerdss non-equilibrium simulator multibody self-assembly cellular scale
+ecology cancer differentiation therapy non-spatial models
+integrative network-based analysis reveals gene networks biological mechanisms novel drug targets alzheimer 's disease
+host antiviral ribonuclease l protein supports zika virus replication factory formation enhance infectious virus production
+versatile high throughput screening platform plant metabolic engineering highlights major role abi3 lipid metabolism regulation
+novel ultrasensitive approach quantitative carbohydrate composition linkage analysis using lc-esi ion trap tandem mass spectrometry
+evolutionary stalling optimization translation machinery
+reference-free deconvolution complex dna methylation data  detailed protocol
+small molecule induced toxic human-iapp species characterized nmr
+learning fold rnas linear time
+14-3-3 over-expression improves tolerance acute chronic cold exposure male mice via thermogenic-dependent -independent mechanisms
+structural modularity xist ribonucleoprotein complex
+nlrp7 plays functional role regulating bmp4 signaling differentiation patient-derived trophoblasts
+nork novel norfloxacin efflux pump staphylococcus aureus
+phase variation-based biosensors bacteriophage detection phage receptor discrimination
+emergence collective oscillations adaptive cells
+nuclear transport receptor tnpo1 binds macrophage immunometabolism regulator macir via py-nls motif
+neighbor gwas incorporating neighbor genotypic identity genome-wide association studies field herbivory arabidopsis thaliana
+non-uniform distribution myosin-mediated forces governs red blood cell membrane curvature tension modulation
+revealing architectural order quantitative label-free imaging deep learning
+calcium-induced calcium release noradrenergic neurons locus coeruleus
+different principles govern different scales brain folding
+neural activity simple reaching task macaques counter theories basal ganglia-thalamic communication
+quantifying prevalence assortative mating human population
+lhfpl5 ohnologs lhfpl5a lhfpl5b required mechanotransduction distinct populations sensory hair cells zebrafish
+intra-species differences population size shape life history genome evolution
+sciapps cloud-based platform analyses distribution maizecode data
+manual dexterity mice food-handling involves thumb set fast basic movements
+gene expression heterogeneity brain development aging temporal changes functional consequences
+transcranial direct current stimulation modulate performance tongue twister task
+novel ph-regulated unusual 603 bp overlapping protein coding gene pop encoded antisense ompa escherichia coli o157 h7 ehec
+novel transplantable model lung cancer associated tissue loss disrupted muscle regeneration
+improved inference prediction bacterial genotype-phenotype associations using pangenome-spanning regressions
+estimating animal density three dimensions using capture-frequency data remote detectors
+hormonal control motivational circuitry orchestrates transition sexuality drosophila
+spatial organization mouse chromosomes influences landscape intrachromosomal exchange aberration breakpoints
+model-based inference punctuated molecular evolution
+neural computation human goal-directed behavior complex motivational states
+microtubule nucleation single human turc partly open asymmetric conformation
+nucleosides rescue replication-mediated genome instability human pluripotent stem cells
+viscoelastic properties ecm-rich embryonic microenvironments
+visualizing protonated rna state modulates microrna-21 maturation
+histone deacetylase 9 promoter hypomethylation associated adipocyte dysfunction statin-related metabolic effect
+energy expenditure cell spreading induces ampk activation regulates mechanoresponse stem cells
+nanopore sequencing undergoes catastrophic sequence failure inverted duplicated dna sequences
+novel fusion based evolutionary features protein fold recognition using support vector machines
+integrative genomic analysis unifying epigenetic inheritance adaptation canalization
+molecular mechanism microtubule nucleation gamma-tubulin ring complex
+large-scale transgenic drosophila resource collections loss- gain-of-function studies
+estimating mutual information measurement error
+comparative transcriptomics reveals domestication-associated features atlantic salmon lipid metabolism
+hydrogel beads based platform single-cell phenotypic analysis digital molecular detection
+evolution gastrointestinal tract morphology plasticity cave-adapted mexican tetra astyanax mexicanus
+odd-paired late-acting pioneer factor coordinating zelda broadly regulate gene expression early embryos
+natural antisense brain-derived neurotrophic factor impairs extinction drug seeking
+silico investigation y220c mutant p53 lead design
+direct-fit nature evolutionary perspective biological artificial neural networks
+high-quality genome assembly north american song sparrow melospiza melodia
+role atp hydrolysis conformational changes human p-glycoprotein living cells
+landscape mutations fumarate hydratase
+cxcr4 mif required neutrophil extracellular trap release triggered plasmodium-infected erythrocytes
+deoxynivalenol promotes porcine epidemic diarrhea virus infection aggravates gut barrier injury
+de novo identification toxicants cause irreparable damage parasitic nematode intestinal cells
+bacteriophages used infection control agents proof-of concept study involving anti-acinetobacter baumannii phage
+confirmation local transmission orientia tsutsugamushi scrub typhus outbreaks nepal
+marine deforestation leads widespread loss ecosystem function
+heparan sulfate proteoglycan syndecan-1 influences local bone cell communication via rankl/opg axis
+high prevalence strongyloidiasis spain hospital-based study
+exposure pm2.5 pregnancy lactation increases methylation reducing expression pdx1 neurog3 mouse pancreatic islets
+complementary performances convolutional capsule neural networks classifying microfluidic images dividing yeast cells
+scalable phylogenetic profiling using minhash uncovers likely eukaryotic sexual reproduction genes
+extracting super-resolution structures inside single molecule overlapped molecules one blurred image
+global distribution evolution mycobacterium bovis lineages
+robust foreground detection somatic copy number data
+crispr-cas12a/cpf1-assisted precise efficient multiplexed genome-editing yarrowia lipolytica
+multi-omics visualization platform extensible galaxy plug-in multi-omics data visualization exploration
+huntingtin phosphorylation governs bdnf homeostasis improves phenotype mecp2 knockout mice
+histone chaperone nucleophosmin regulates transcription key genes involved oral tumorigenesis
+early-life environmental enrichment generates persistent individualized behavior mice
+microrna profiling weddell seal suggests novel regulatory mechanisms contributing diving adaptation
+multiple-trait bayesian lasso genome-enabled analysis prediction complex traits
+protein adlayer thickness colloidal nanoparticle determined rayleigh-gans-debye approximation
+muscle synergies improve optimization prediction muscle activations gait
+microrna476a/rfl module regulates adventitious root formation mitochondria-dependent pathway populus
+polyploidy adult drosophila brain
+low membrane fluidity triggers lipid phase separation protein segregation vivo
+nanopore based chromosome-level assembly representing atlantic cod celtic sea
+dendritic cells require tmem176a/b ion channels optimal mhc ii antigen presentation naive cd4+ cells
+global non-animal peroxidases analysis provides insights evolutionary study gene family green lineage
+ctcf haploinsufficiency mediates intron retention tissue-specific manner
+zygotic pioneer factor activity odd-paired/zic necessary establishing drosophila segmentation network
+neural adaptation accented speech prefrontal cortex aids attunement auditory cortices
+distinct actin-dependent nanoscale assemblies underlie dynamic hierarchical organization e-cadherin
+localization ankyrin g nav kcnq1 channels neuro-cardiac junctions
+maternal exposure cigarette smoking induces immediate durable changes placental dna methylation affecting enhancer imprinting control regions
+statistical power implications planning meg studies
+vadr validation annotation virus sequence submissions genbank
+evolutionary history porpoises phocoenidae across speciation continuum mitogenome phylogeographic perspective
+slicing genome star-fruit averrhoa carambola l
+non-invasive neuromodulation using rtms electromagnetic-preceptive gene epg facilitates plasticity nerve injury
+mity highly sensitive mitochondrial variant analysis pipeline whole genome sequencing data
+nonlinear stimulus representations neural circuits approximate excitatory-inhibitory balance
+alcohol drinking alters stress coping via extended amygdala kappa opioid receptor signaling
+domain-general cognitive core defined multimodally parcellated human cortex
+congruent demographic responses pleistocene geological processes sumatran parachuting frogs comparison target-capture ddradseq population genomic analyses
+null results dimensional study error-related negativity ern self-reported psychiatric symptoms
+electrophysiological correlates flexible allocation visual working memory resources
+large-scale analyses disease biomarkers apremilast pharmacodynamic effects
+cell-wall-localised beta-xylosidase 4 contributes immunity arabidopsis botrytis cinerea
+switch translation initiation elongation needs not4 not5 collaboration
+quantitative detection cell activity measuring fluctuation intracellular motility
+predator complementarity dampens variability phytoplankton biomass diversity-stability trophic cascade
+time-of-day dependent responses cyanobacterial cellular viability oxidative stress
+enhancing gesture decoding performance using signals posterior parietal cortex stereo-electroencephalograhy seeg study
+resource targeted mutant mouse lines 5,061 genes
+derivatives antimalarial drug mefloquine broad spectrum antifungal molecules activity drug-resistant clinical isolates
+multi-functional antibodies induced rts malaria vaccine associated protection phase i/iia trial
+dynamic evolution euchromatic satellites x chromosome drosophila melanogaster simulans clade
+vivo diversification target genomic sites using processive t7 rna polymerase-base deaminase fusions blocked rna-guided dcas9
+cutting in-line iron ribosomal function non-oxidative rna cleavage
+novel determination root-knot nematodes microspace mineral profile transduction metabolic signals tomato
+genome-enabled prediction models black tea camellia sisnesnsis quality drought tolerance traits
+extended access self-administration methamphetamine associated age- sex-dependent differences drug taking behavior recognition memory deficits rats
+porous upconversion nanostructures bimodal biomedical imaging contrast agents
+synergistic cues diverse bacteria enhance multicellular development choanoflagellate
+benchmark tools cnv detection ngs panel data genetic diagnostics context
+balancing selection hla-g modulates fetal survival preeclampsia human birth sex ratio
+evidence involvement vernalization-related genes regulation cold-induced ripening 'd'anjou 'bartlett pear fruit
+in-depth profiling calcite precipitation environmental bacteria reveals fundamental mechanistic differences relevance application
+uncoupling splicing transcription using antisense oligonucleotides reveals dual role exon donor splice sites antibody class switching
+rare rewards amplify dopamine learning responses
+single-cell immuno-mechanics rapid viscoelastic changes hall-mark early leukocyte activation
+saturating mutagenesis crispr-cas9 mediated functional genomic screen identifies cis- trans-regulatory elements oct4 embryonic stem cells
+simultaneous fluorescence imaging tilted focal planes two depths thick neural tissue implementation remote focus widefield electrophysiological microscope
+genetic risk cholangiocarcinoma linked autophagy gene atg7
+multiscale framework disentangling roles evenness density aggregation diversity gradients
+protein products non-stop mrna disrupt nucleolar homeostasis
+daratumumab induces mechanisms immune activation cd38+ nk cell targeting
+regularities species niches reveal world  climatic regions
+network structure eco-evolutionary dynamics crispr-induced immune diversification
+discovery first human retro-giant virus description morphology retroviral kinase ability induce tumours mice
+increased efficacy histone methyltransferase g9a inhibitors mycn-amplified neuroblastoma
+welcoming back arm affective touch increases body ownership following right hemisphere stroke
+tarani/ ubiquitin specific protease 14 destabilizes aux/iaa transcriptional repressors regulates auxin response arabidopsis thaliana
+colony volatiles substrate-borne vibrations entrain circadian rhythms potential mediators social synchronization honey bee colonies
+differential activation g protein-mediated signalling synthetic cannabinoid receptor agonists
+using systems change framework evaluate academic equity amp amp climate efforts graduate program
+cancer predisposition sequencing reporter cpsr flexible variant report engine germline screening cancer
+etv7 represses subset interferon-stimulated genes restrict influenza viruses
+deepdbp deep neural networks identification dna-binding proteins
+deep-channel uses deep neural networks detect single-molecule events patch-clamp data
+effects pathogenic cnvs biochemical markers study uk biobank
+removing hidden data dependency dia predicted spectral libraries
+molecular determinants arc oligomerization formation virus-like capsids
+representation two-body shapes human visual cortex
+stoichiometric constraints modulate effects temperature nutrients biomass distribution community stability
+automated reconstruction gene histories large bacterial pangenome datasets search co-evolved gene modules pantagruel
+continental-scale microbiome study reveals different environmental characteristics determining microbial richness composition/quantity hotel rooms
+genome sequence octocoral paramuricea clavata  key resource study impact climate change mediterranean
+ mir152 hypomethylation potentially triggered embryonic hypoxia common mechanism non-syndromic cleft lip/palate 
+visualization viral infection dynamics unicellular eukaryote quantification viral production using virusfish
+ecological divergence hybridization neotropical leishmania parasites
+quantitative analysis ubiquitin-proteasome system proteolytic folding stressors
+ovarian hormone status dictates neuroinflammatory behavioural consequences sub-chronic stress exposure middle-aged female mice
+widespread family heat-resistant obscure hero proteins protect protein instability aggregation
+assembly drosophila mushroom body circuit regulation semaphorin 1a
+cellular fitness phenotypes cancer target genes cancer therapeutics
+motor imagery practice arm-immobilization benefits sensorimotor cortical functions plasticity-related sleep features
+selective activation estrogen receptors   implications depressive-like phenotypes female mice exposed chronic unpredictable stress
+coessential genetic networks reveal organization constituents dynamic cellular stress response
+testosterone secretion varies sex- stage-specific manner insights regulation competitive traits sex-role reversed species
+modeling motor-evoked potentials neural field simulations transcranial magnetic stimulation
+chloroplast nucleoids highly dynamic ploidy number structure leaf development
+functional parcellation default mode network large-scale meta-analysis
+vivo interictal signatures human periventricular heterotopia
+choreography human attraction physiological synchrony blind date setting
+transdiagnostic phenotyping reveals range metacognitive deficits associated compulsivity
+activation gpr56 novel adhesion gpcr necessary nuclear androgen receptor signaling prostate cells
+affinity rhodopsin raft enables aligned oligomer formation dimers coarse-grained molecular dynamics simulation disk membranes
+object recognition p14 mice
+targeted memory reactivation increases memory recall meta-analysis
+balancing cell populations endowed synthetic toggle switch via adaptive pulsatile feedback control
+type ii alexander disease caused splicing errors aberrant overexpression uncharacterized gfap isoform
+structure function sucker systems hill stream loaches
+cord blood dna methylome newborns later diagnosed autism spectrum disorder reflects early dysregulation neurodevelopmental x-linked genes
+identification novel missense variant slc45a2 associated dilute snowdrop phenotype gypsy horses
+neolithic genomes reveal distinct ancient hla allele pool population transformation europe
+learning remember predicting future impairs encoding present
+deep sequence foot-and-mouth disease virus gene pool bottlenecks adaptation infection nave vaccinated cattle
+chronic viral infection promotes early germinal center exit b cells impaired antibody development
+semaphorin 3a binding chondroitin sulfate e enhances biological activity protein cross-links rigidifies glycosaminoglycan matrices
+learning mutational signatures multidimensional genomic properties tensorsignatures
+convergence divergence anti-predator displays novel approach quantitative behavioural comparison neotropical snakes
+single-cell molecular profiling provides high-resolution map basophil mast cell differentiation
+genome-wide association functional analyses identify casc20 kif26b target loci heterotopic ossification
+axon-dependent expression yap/taz mediates schwann cell remyelination proliferation nerve injury
+inference southern origin north american firefly photinus pyralis
+family history depression associated alterations task-dependent connectivity cerebellum ventromedial prefrontal cortex
+competitive inhibition cortisol prostaglandins ligand binding domain glucocorticoid receptors
+splicing-sensitive fusion transcripts associated key tumor characteristics occur high frequency neuroblastoma
+electrostatic-interaction-based mechanism triggering misfolding prion proteins cellular isoform scrapie isoform
+selective facilitation egocentric mental transformations short-term microgravity
+image memorability predicted activity across different stages convolutional neural networks human ventral stream
+g-quadruplexes act sequence dependent chaperones via protein oligomerization
+low iron-induced small rna brrf regulates central metabolism oxidative stress responses burkholderia cenocepacia
+existence functions hypothalamic kisspeptin neuropeptide signaling system non-chordate deuterostome species
+naturally occurring fluorescence protects eutardigrade paramacrobiotus sp ultraviolet radiation
+facile accelerated specific therapeutic fast platform counter multidrug-resistant bacteria
+neurocognitive mechanisms social inferences typical autistic adolescents
+transcription factors protect dna re-methylation reprograming primordial germ cells pre-implantation embryos
+exploring groundwater microbial communities natural attenuation potential micropollutants
+restriction s-adenosylmethionine conformational freedom knotted protein binding sites
+multiplexed biosensors precision bacteria tropism vivo
+bacterial quorum sensing allows graded responses variations density individual population scales
+proprioception subject-specific improved without performance feedback
+testosterone improves muscle function extensor digitorum longus rats sepsis
+whole-genome scan association invasion success fruit fly drosophila suzukii using contrasts allele frequencies corrected population structure
+transcriptional activation cyclin d1 via her2/her3 contributes cell survival egfr tyrosine kinase inhibitor resistance non-small cell lung carcinoma
+designing combination therapies using multiple optimal controls
+axonal mitochondria across species adjust diameter depending thickness surrounding myelin
+brain-derived extracellular vesicles highly enriched prion protein c1 fragment relevance cellular uptake implications stroke
+extracellular dna controls expression pseudomonas aeruginosa genes involved nutrient utilization metal homeostasis acid ph tolerance virulence
+invasion syndromes evolve experimental evolution approach using ladybug harmonia axyridis
+taking sub-lexical route brain dynamics reading semantic variant primary progressive aphasia
+reconciling global priorities conserving biodiversity habitat
+high-efficiency multi-site genomic editing hemse pseudomonas putida thermoinducible ssdna recombineering
+quantitative phenotyping vascular damage caused fusarium wilt disease cowpea
+brain coding social network structure
+user guide environmental protistology primers metabarcoding sequencing analyses
+dorsal raphe oxytocin receptors regulate neurobehavioral consequences social touch
+ftsw exhibits distinct processive movements driven either septal cell wall synthesis ftsz treadmilling e. coli
+environmentally triggered evolutionary cascade across trophic levels experimental phage-bacteria-insect system
+amplitude timescale metacommunity trait-lag response climate change
+dereplicate dereplicate
+mental travel social domain
+cyclic peptides engage single binding pocket multiple entirely divergent modes
+neural responses perceptual sensitivity sound depend sound-level statistics
+cytomap spatial analysis toolbox reveals features myeloid cell organization lymphoid tissues
+dynamic expression mmp28 cranial morphogenesis
+ferroptosis contributes developmental cell death rice blast
+controlling spatiotemporal pattern formation concentration gradient synthetic toggle switch
+changes ambient temperature prevailing cue determining brachypodium distachyon diurnal gene regulation
+construction light-activated neurotrophin receptors using improved light-induced dimerizer ilid
+bulk single-molecule analysis novel dna2-like helicase-nuclease reveals single-stranded dna looping motor
+thermophilic phage uses small terminase protein fixed helix-turn-helix geometry
+aurka destruction decoupled activity mitotic exit suppresses interphase activity
+intramembrane protease rhbdl4 induces er-associated degradation oligosaccharyltransferase complex
+lgr5+ telocytes signaling hub intestinal villus tip
+asymmetric sheath controls flagellar supercoiling motility leptospira spirochete
+magnetic resonance measurements cellular sub-cellular membrane structures live fixed neural tissue
+absence subcerebral projection neurons delays disease onset extends survival mouse model als
+generalized rayleigh-plesset theory cell size maintenance viruses bacteria
+complexin suppresses spontaneous exocytosis capturing membrane-proximal regions vamp2 snap25
+head stabilization standing people persisting symptoms mild traumatic brain injury
+endogenous polybasic peptides cause slower movement ribosomes targets ribosome quality control complex rqc
+differential transcription expanded gene families central carbon metabolism streptomyces coelicolor a3 2
+active sampling visual search coupled cardiac cycle
+flexible recruitment memory-based choice representations human medial-frontal cortex
+mechanisms high-intensity sound exposure inhibiting hippocampal long-term potentiation role brain-derived neurotrophic factor
+enhancing network activation natural killer cells predictions silico modeling
+alignparse python package parsing complex features high-throughput long-read sequencing
+jacobi4 software multivariate analysis biological data
+machine learning predicts immunoglobulin light chain toxicity somatic mutations
+unsupervised content-preserving transformation optical microscopy
+transcriptional profiling potato solanum tuberosum l. compatible interaction root-knot nematode meloidogyne javanica
+short commentary indents edges -sheets
+graphprot2 novel deep learning-based method predicting binding sites rna-binding proteins
+svjedi genotyping structural variations long reads
+compositional knockoff filter high-dimensional regression analysis microbiome data
+computing skin cutaneous melanoma outcome hla-alleles clinical characteristics
+pbs3 eps1 complete salicylic acid biosynthesis isochorismate arabidopsis
+polyploidization events shaped transcription factor repertoires legumes fabaceae
+biomarker2vec attribute- behavior-driven representation multi-type relationship prediction various biomarkers
+genetic diversity tilapia lake virus genome segment 1 2011 2019 newly validated semi-nested rt-pcr method
+ctip-mediated alternative mrna splicing finetunes dna damage response
+highly sensitive specific sybr green quantitative polymerase chain reaction qpcr method rapid detection scale drop disease virus asian sea bass lates calcarifer
+rapid quantification peptide oxidation isomers complex mixtures
+gene-flow steppe individuals cucuteni-trypillia associated populations indicates long-standing contacts gradual admixture
+adversarial generation gene expression data
+microbe-metabolite associations linked rebounding murine gut microbiome post-colonization vancomycin resistant enterococcus faecium
+midgut aminopeptidase n expression profile castor semilooper sublethal cry toxin exposure
+statistical foundation colour space
+hippocampal subfield volumes abstinent men women history alcohol use disorder
+ultrasound echogenicity associated achilles tendon fatigue damage cadaveric loading model
+novel exosome biogenesis mechanism multivesicular structures budding rupturing plasma membrane
+stimulus contrast information modulates sensorimotor decision making goldfish
+high-throughput transposon sequencing highlights cell wall important barrier osmotic stress methicillin resistant staphylococcus aureus underlines tailored response different osmotic stressors
+winter water differential responses maintenance biodiversity
+c-terminal rrm/act domain crucial fine-tuning activation  long  rela-spot homolog enzymes ribosomal complexes
+cluster-permutation statistical analysis high-dimensional brain-wide functional connectivity mapping
+single cell tri-channel-processing reveals structural variation landscapes complex rearrangement processes
+electron beam lithography fabrication su-8 polymer structures cell studies
+stromal cell-contact dependent pi3k april induced nf-b signaling complement prevent mitochondrial- endoplasmic reticulum stress induced cell death bone marrow plasma cells
+dynamic sound field audiometry static dynamic spatial hearing tests full horizontal plane
+climate associated genetic variation fagus sylvatica potential responses climate change french alps
+tms-induced motor activation increases visual awareness
+light dependent activation gcn2 kinase cold salt stress mediated photosynthetic status chloroplast
+characterization isoforms ovine granulocyte colony stimulating factor
+phosphatidic acid produced phospholipase required hyphal cell-cell fusion fungal-plant symbiosis
+genomic characterization sigrfs foxtail millet sigrf1-overexpression arabidopsis thaliana promotes plant avoid salt stress
+chemokine receptors ackr2 ccr1 coordinate macrophage dynamics mammary gland development
+detecting behavioral patterns diagnosis rehabilitation visual neglect technology-enhanced version baking tray task
+iq-tree 2 new models efficient methods phylogenetic inference genomic era
+structural characterization tau fuzzy tau tubulin complexes
+linking lysosomal enzyme targeting genes energy metabolism altered gray matter volume children persistent stuttering
+minimal genome-wide human crispr-cas9 library
+frameshifts wild-type protein sequences always highly similar genetic code optimal frameshift tolerance
+effect anteroposterior perturbations control center mass treadmill walking
+early vocal production functional flexibility wild infant chimpanzees
+disentangling functional connectivity effects age expertise long-term meditators
+endogenous sugar level associated differential heat tolerance onion bulb scales
+nose mightier tooth larger male proboscis monkeys smaller canines
+double resin casting micro computed tomography duct reveals biliary vascular pathology mouse model alagille syndrome
+complex evolutionary history chromosome flies drosophila obscura species group
+interneuron dysfunction new knock-in mouse model scn1a gefs+
+origin co-operativity activation dimeric transcription factors
+embodied nature well-timed behavior
+predicting collapse complex ecological systems quantifying stability-complexity continuum
+understanding interplay sleep aging methodological challenges
+two new polymorphic structures alpha-synuclein solved cryo-electron microscopy
+unraveling relation eeg-correlates attentional orienting sound localization performance diffusion model approach
+noradrenergic responsiveness supports selective attention across adult lifespan
+drought-induced mortality stem diameter variation reveals point return lavender species
+nav1.5 single-molecule localization reveals different reorganization modes cardiomyocyte domains
+prospr democratized implementation alphafold protein distance prediction network
+spatial attention expectations rely modality-specific multisensory mechanisms
+decoding encoding models reveal role depth processing brain representation meaning
+global transcriptome analysis reveals circadian control splicing events arabidopsis thaliana
+fatty acid bioconversion harpacticoid copepods changing environment transcriptomic approach
+rod nuclear architecture determines contrast transmission retina behavioral sensitivity mice
+immune-mediated genetic pathways resulting pulmonary function impairment increase lung cancer susceptibility
+reissner fiber highly dynamic vivo controls morphogenesis spine
+fitness community feedbacks two axes drive long-term invasion impacts
+gut microbiota influences circulating immune cells humans change one day next
+direct detection mrna expression microbial cells fluorescence situ hybridization using rnase h-assisted rolling circle amplification
+extent gene connectivity within co-expression network matters phenotype prediction
+beat-based memory-based temporal expectations rhythm similar perceptual effects different underlying mechanisms
+simpactcyan 1.0 open-source simulator individual-based models hiv epidemiology r python interfaces
+relative toxicity selected herbicides household chemicals earthworms
+pseudomonas aeruginosa core metabolism exerts widespread growth-independent control virulence
+controlling robotic arm functional tasks using wireless head-joystick case study child congenital absence upper lower limbs
+role microrna-21 hypertrophic cardiac remodeling
+structural variation functional differentiation expression characteristics ap2/erf gene family response cold stress methyl jasmonate panax ginseng c.a meyer
+fontcell fusion ontologies cells
+genetic deletion autotaxin cd11b+ cells decreases severity experimental autoimmune encephalomyelitis
+zika virus primary isolate induces neuroinflammation compromises blood-brain barrier upregulates cxcl12 adult macaques
+estrogen receptor  exerts tumor suppressive effects prostate cancer repression androgen receptor activity
+cyniclomyces guttulatus opportunistic pathogen rabbits coccidiosis
+loss family sequence similarity 13 member exacerbates pulmonary hypertension accelerating endothelial-to-mesenchymal transition
+late-season surveys document seed rain potential palmer amaranth amaranthus palmeri waterhemp amaranthus tuberculatus texas cotton
+evolution dengue-2 viruses malindi kenya greater east africa epidemiological immunological implications
+hspg2 modifier gene marfan syndrome
+cold distant structural features nucleoprotein complex cold-adapted influenza virus strain
+context-dependent role vinculin neutrophil adhesion motility trafficking
+structure-based design cortistatin analog improved immunoregulatory activity inflammatory bowel disease ibd
+network analysis reveals distinct axis macrophage activation response conflicting inflammatory cues
+human-specific regulatory features brain development manifest staggering breadth associations physiological processes pathological conditions h. sapiens
+oncologic therapy shapes fitness landscape clonal hematopoiesis
+sex differences alternative reproductive tactics response predation risk tree crickets
+combining single- repeated-visit occupancy models make best monitoring surveys
+acclimation priming memory response arabidopsis thaliana seedlings cold stress
+fus gene dual-coding proteins united molecular hallmarks amyotrophic lateral sclerosis
+characterisation erf102 erf105 genes arabidopsis thaliana role response cold stress
+statistical inference mechanistic models qualitative data using efficient optimal scaling approach
+learning complex auditory patterns changes intrinsic feedforward effective connectivity heschl  gyrus planum temporale
+study human origin migration novel genomic footprint derived mitochondrial sequences
+unsupervised bayesian ising approximation revealing neural dictionary songbirds
+time vision functional preservation enhanced capacity recovery subacute occipital stroke
+long read sequencing 1,817 icelanders provides insight role structural variants human disease
+structure activation mechanism bbsome membrane-protein trafficking complex
+integer linear programming outperforms simulated annealing solving conservation planning problems
+geographically structured genomic diversity non-human primate-infecting treponema pallidum subsp pertenue
+investigation lpa kiv-2 nonsense mutation 11,000 individuals importance linkage disequilibrium structure lpa genetics
+synthetic likelihood solution silent synapse estimation problem
+solo acylhomoserine lactone synthase predatory myxobacterium suggests beneficial participation interspecies cross talk
+contribution lincrnas interface cell cycle regulation cell state maintenance
+combining focused identification germplasm core collection strategies identify genebank accessions central european soybean breeding
+determination cas9/dcas9 associated toxicity microbes
+semaphorin 3a induces cytoskeletal paralysis tumor-specific cd8+ cells
+rna recognition e2 subunit chloroplast pyruvate dehydrogenase complex chlamydomonas
+branch point control malonyl-coa node computational framework optimize controller architecture toward ideal metabolic switches
+catalytic inhibition h3k9me2 writers disturbs epigenetic marks bovine nuclear reprogramming
+automated cot-side tracking functional brain age preterm infants routine eeg monitoring
+genetic differences growth thermal reaction norms maintain genetic variation timing diapause induction
+mitochondrial dna copy number incident atrial fibrillation
+rewetting three drained peatlands drives congruent compositional changes pro- eukaryotic microbiomes environmental filtering
+two-lane mechanism selective biological ammonium transport
+trypanosoma brucei orfeome-based gain-of-function library reveals novel genes associated melarsoprol resistance
+transplacentally mediated immune training accelerate fetal immune competence
+c9orf72-derived arginine-containing dipeptide repeats associate axonal transport machinery impede microtubule-based motility
+adiponectin receptor fragmentation mouse models type 1 type 2 diabetes
+adolescent substance use functional connectivity ventral striatum hippocampus
+pits ctbp control tissue growth drosophila melanogaster hippo pathway transcription repressor tgi
+origin spread locally adaptive seasonal camouflage snowshoe hares
+fungal communities mycobiome potential ecological indicators within confluence stretch ganges yamuna rivers india
+loss pseudouridine synthases rlua family causes hypersensitive nociception drosophila
+robotic light touch assists human balance control maximum forward reaching
+comparative metatranscriptomics periodontitis supports common polymicrobial shift metabolic function identifies novel putative disease-associated ncrnas
+wolbachia successfully replicate newly established horn fly haematobia irritans irritans l. diptera muscidae cell line
+load-dependent modulation alpha oscillations working memory encoding retention young older adults
+tn3-associated toxin-antitoxin gene pairs appear integral part transposition module
+statistical analysis optimality biological systems
+openprimer multiplex amplification highly diverse templates
+stereological characterization major cell lineages mouse dorsal dentate gyrus
+peripheral nerve repair using tissue engineered  living scaffolds  comprised stretch-grown aligned axonal tracts promotes survival spinal cord motor neurons
+regional hemispheric susceptibility temporal lobe ftld-tdp-43-c pathology
+restriction essential amino acids dictates systemic response dietary protein dilution
+type 2 diabetes one disease many pathways
+pharmacological complementation remedies inborn error lipid metabolism
+gendered fitness interests method partitioning effects family composition socio-political attitudes behaviors
+investigation working memory networks verbal rhythmic stimuli
+large-scale assessment lake bacterial communities reveals pervasive impacts human activities
+analytical solution hybrid logistic-monod cell growth model batch cstr culture
+targeting resolvin e1 eicosapentaenoic acid axis improves hyperinsulinemia hyperglycemia host genetic dependent manner
+analysis regulatory element evolution human mouse reveals lack cis-trans compensation
+regeneration comes free biological development generative boolean model
+testes dazl null sheep lack spermatogonia maintain normal somatic cells
+principal component approach improve association testing polygenic risk scores
+linked networks reveal dual roles insect dispersal species sorting bacterial communities flowers
+maternal effect senescence fitness demographic analysis novel model organism
+disrupted serial dependence suggests deficits synaptic potentiation anti-nmdar encephalitis schizophrenia
+vivo directed evolution aav primate retina
+signal noise ratio cross-platform metric intraoperative fluorescence imaging
+efficacy restoration stream networks comments critiques
+zoonotic tuberculosis india looking beyond mycobacterium bovis
+meta-control exploration-exploitation dilemma emerges probabilistic inference hierarchy time scales
+neural correlates evidence urgency human perceptual decision-making dynamically changing conditions
+relative genomic impacts translocation history hatchery practices farm selection pacific oyster crassostrea gigas throughout northern hemisphere
+functional connectome analyses reveal highly optimized human olfactory network
+sexual selection increase rate compensatory adaptation mutation influencing secondary sexual trait drosophila melanogaster
+division labor recruitment topological organization bacterial morphogenic complex
+altered functional connectivity speech perception congenital amusia
+enhanced maturation human stem cell derived interneurons mtor activation
+radiosafe micro-computed tomography longitudinal evaluation murine disease models
+temporal transcriptome promoter architecture african swine fever virus
+hdac mapk/erk inhibitors cooperate reduce viability stemness phenotype medulloblastoma
+chromosome-level assembly drosophila bifasciata reveals important karyotypic transition x chromosome
+design specificity long ssdna donors crispr-based knock-in
+emergence opposite neurons decentralized firing-rate model multisensory integration
+dissociable effects visual crowding perception colour motion
+structural neuroimaging signatures anorexia nervosa features mixed sample enriched disease vulnerability
+physiological synchrony promotes cooperative success real-life interactions
+developmental trajectory pre-hematopoietic stem cell formation endothelium
+programmed transport release nanoscale cargo immune cells
+native hydrogen/deuterium exchange mass spectrometry structured dna oligonucleotides
+caenorhabditis elegans piezo channel coordinates multiple reproductive tissues govern ovulation
+unsupervised graph-based learning predicts mutations alter protein dynamics
+within visit test-retest reliability eeg profiles children autism spectrum disorder typical development
+modulating cellular context broadly reshapes mutational landscape model enzyme
+structural characterization n-terminal domain dictyostelium discoideum mitochondrial calcium uniporter
+endogenous responses brain ph po2 rodent model birth asphyxia
+unspecific expression limited excitatory cell populations interneuron-targeting cre-driver lines large functional effects
+quantitative high-resolution imaging live microbial cells high hydrostatic pressure
+effects dopamine receptor antagonism amphetamine sensitization sign- goal-tracking extended training
+state anterior cingulate prelimbic areas rats immobility
+cortico-thalamic dysconnectivity links aberrant striatal dopamine schizophrenia simultaneous 18f-dopa-pet/resting-state fmri study
+composite replicate sampling method protocol differences alter stream bioassessment metrics
+antagonistic odor interactions olfactory sensory neurons widespread freely breathing mice
+n-terminal acetylation proteins nata natb serves distinct physiological roles saccharomyces cerevisiae
+barley ric157 involved racb-mediated susceptibility powdery mildew
+exposure embryonic development roundup power 2.0 affects lateralization level activity growth defensive behaviour marsh frog tadpoles
+insect egg-killing new front evolutionary arms-race brassicaceae plants pierid butterflies
+extending genotype brachypodium including dna methylation reveals joint contribution genetics adaptive traits
+sexual conflict explains diverse patterns transgenerational plasticity
+rh mapping sequencing chromosome-scale assembly duck genome
+estimating genetic inheritance case-control studies
+engulfment receptor draper organizes postsynaptic spectrin cytoskeleton corrals containing synaptic proteins promotes synaptic renewal
+four qtl underlie resistance microsporidian parasite may drive genome evolution daphnia host
+multiple-trait bayesian variable selection regression method integrating phenotypic causal networks genome-wide association studies
+comparative genomics reveals signature regions used develop robust sensitive multiplex taqman real-time qpcr assay detect genus dickeya dickeya dianthicola
+co-designed land-use scenarios implications storm runoff streamflow new england
+non-affine displacements encode collective conformational fluctuations proteins
+impact different amino acid substitutions penicillin-binding protein 3 beta-lactam susceptibility haemophilus influenzae
+testing darwin  naturalization conundrum based taxonomic phylogenetic functional dimensions vascular plants
+neuroanatomical ultrastructure function biological ring attractor
+dna origami nanostructures tool targeted destruction bacteria
+taxonomic functional biogeographies phytoplankton zooplankton communities across boreal lakes
+integration odor-induced activity kenyon cells electrotonically compact drosophila mushroom body output neuron mbon
+phenotypic physiological responses salt exposure sorghum reveal diversity among domesticated landraces
+motility phototaxis gonium simplest differentiated colonial alga
+phase separation ssdna binding protein controlled via protein-protein protein-dna interactions
+easy mpe extraction quality microplot images uav-based high-throughput field phenotyping
+genetic tool development marine protists emerging model organisms experimental cell biology
+individual-subject functional localization increases univariate activation multivariate pattern discriminability  multiple-demand  frontoparietal network
+symbiosis genes show unique pattern introgression selection within rhizobium leguminosarum species complex
+redox signaling modulates rho activity tissue contractility c. elegans spermatheca
+breast tumor stiffness instructs bone metastasis via mechanical memory
+human escrt-iii polymers assemble positively curved membranes induce helical membrane tube formation
+tra2a-induced upregulation linc00662 regulates blood-brain barrier permeability affecting elk4 mrna stability alzheimer  microenvironment
+meis1 down-regulation myc mediates prostate cancer development elevated hoxb13 expression ar activity
