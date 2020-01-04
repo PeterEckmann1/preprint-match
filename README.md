@@ -9,7 +9,7 @@ Preprints from BioRxiv are matched with PubMed papers based on similarity betwee
 <h3> Dependencies </h3>
 Python 3.8 is required, as well as the latest versions of:
 
-- `scipy`
+- [`scipy 1.3.3`](scipy 1.3.3)
 
 - `numpy`
 
