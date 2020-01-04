@@ -7,18 +7,15 @@ Preprints from BioRxiv are matched with PubMed papers based on similarity betwee
 
 <h2> Setup </h2>
 <h3> Dependencies </h3>
-Python 3.8 is required, as well as the latest versions of:
+Python 3.8 is required, as well as:
 
-- 
-[`scipy 1.3.3`](https://www.scipy.org/install.html)
+-  [`scipy 1.3.3`](https://www.scipy.org/install.html)
 
-- `numpy`
+-  [`nltk 3.4.5`](https://www.nltk.org/install.html)
 
-- `nltk`
+-  [`psutil 5.6.7`](https://pypi.org/project/psutil/)
 
-- `psutil`
-
-- `sklearn`
+-  [`sklearn 0.22`](https://scikit-learn.org/0.15/install.html)
 
 <h3> Installing the database </h3>
 A copy of PubMed is required for the program to run. Follow the following steps to download and parse the database for usage.
