@@ -20,9 +20,9 @@ Python 3.8 is required, as well as:
 <h3> Installing the database </h3>
 A copy of PubMed is required for the program to run. Follow the following steps to download and parse the database for usage.
 
-1. Run `pubmed_master.py` in the `database` folder (i.e. `python pubmed_master.py`)
+1. Run `pubmed_master.py` in the `database` folder (i.e. `python pubmed_master.py`) (~10 hours)
 
-2. Run `create_matrix_master.py` in the `database` folder (i.e. `python create_matrix_master.py`)
+2. Run `create_matrix_master.py` in the `database` folder (i.e. `python create_matrix_master.py`) (~5 hours)
 
 <h2> Usage </h2>
 Create a file of DOIs, each on a separate line. For example,
@@ -39,6 +39,6 @@ When finished, a file for each DOI will be found in the `results` folder of `pre
 <h3> Testing </h3>
 To test the algorithm, follow the following steps.
 
-1. Run `build_test.py` in the `tests` folder (i.e. `python build_test.py`)
+1. Run `build_test.py` in the `tests` folder (i.e. `python build_test.py`) (~2 hours)
 
-2. Run `find_papers.py` with the flag `-t` or `--test` (i.e. `python find_papers.py -t`)
+2. Run `find_papers.py` with the flag `-t` or `--test` (i.e. `python find_papers.py -t`) (~20 seconds per preprint)
