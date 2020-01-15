@@ -34,7 +34,7 @@ def get(url):
         try:
             result = requests.get(url)
         except:
-            print('Waiting 10 seconds...')
+            print('Could not access webpage, trying again in 10 seconds')
             time.sleep(10)
             worked = False
     return result.text

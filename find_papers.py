@@ -17,6 +17,7 @@ if len(sys.argv) > 1:
     if sys.argv[1] == '-t' or sys.argv[1] == '--test':
         print('Testing mode')
     else:
+        print('Fetching preprints')
         dois = []
         f = open(sys.argv[1], 'r')
         for line in f:
@@ -68,6 +69,7 @@ if len(sys.argv) > 1 and (sys.argv[1] == '-t' or sys.argv[1] == '--test'):
                     continue
                 if line[2] != line[4]:
                     passed = False
+
     print('Tests passed:', passed)
 else:
     for f_name in os.listdir('results'):

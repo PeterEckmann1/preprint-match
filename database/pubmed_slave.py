@@ -36,6 +36,7 @@ f = gzip.open(filename)
 papers = []
 delete = False
 to_delete = []
+seen_pmid = False
 
 for line in f:
     line = line.decode('utf-8')
@@ -44,6 +45,7 @@ for line in f:
     line = line.replace(SUB_SUB_DELIM, '')
     if '<PubmedArticle>' in line:
         papers.append({'title': '', 'abstract': '', 'pmid': '', 'year': '', 'month': '', 'day': '', 'authors': []})
+        seen_pmid = False
 
     if '<ArticleTitle>' in line:
         title = line.split('<ArticleTitle>')[1]
@@ -71,7 +73,8 @@ for line in f:
         name = name.split('</LastName>')[0]
         papers[-1]['authors'].append(name)
 
-    if '<PMID Version="1">' in line:
+    if '<PMID Version="1">' in line and not seen_pmid:
+        seen_pmid = True
         pmid = line.split('>')[1]
         pmid = pmid.split('<')[0]
         if delete:

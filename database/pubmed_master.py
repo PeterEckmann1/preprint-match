@@ -57,6 +57,8 @@ os.system('rm *.gz')
 ps = []
 if len(sys.argv) > 1 and (sys.argv[1] == '-d' or sys.argv[1] == '--delete'):
     delete_database()
+    exit(0)
+
 i = 1
 while i < 2000:
     print(i)
