@@ -3,10 +3,15 @@ import sys
 import os
 import time
 
-try:
-    os.mkdir('results')
-except:
-    pass
+def make_dir(name):
+    try:
+        os.mkdir(name)
+    except:
+        pass
+
+make_dir('results')
+make_dir('test_database')
+make_dir('test_database/matrices')
 
 for f_name in os.listdir('matching/preprints'):
     os.remove('matching/preprints/' + f_name)
@@ -16,6 +21,7 @@ for f_name in os.listdir('results'):
 if len(sys.argv) > 1:
     if sys.argv[1] == '-t' or sys.argv[1] == '--test':
         print('Testing mode')
+        if os.listdir('tests/
     else:
         print('Fetching preprints')
         dois = []

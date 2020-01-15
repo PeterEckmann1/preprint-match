@@ -8,6 +8,11 @@ import os
 
 STOPWORDS = set(nltk.corpus.stopwords.words('english'))
 
+try:
+    os.mkdir('test_preprints')
+except:
+    pass
+
 
 def get_vector(paragraph):
     tokens = [token for token in nltk.word_tokenize(paragraph.lower()) if not token in STOPWORDS]
