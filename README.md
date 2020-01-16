@@ -18,9 +18,9 @@ Python 3.8 is required, as well as:
 -  [`sklearn 0.22`](https://scikit-learn.org/0.15/install.html)
 
 <h3> Installing the database </h3>
-A copy of PubMed is required for the program to run. Follow the following steps to download and parse the database for usage.
+A copy of PubMed is required for the program to run. Follow the following steps to download and parse the database for usage, or to update the database to the newest version of PubMed.
 
-1. Run `pubmed_master.py` in the `database` folder (i.e. `python pubmed_master.py`) (~10 hours)
+1. Run `pubmed_master.py` in the `database` folder (i.e. `python pubmed_master.py`) (Use `-d` or `--delete` to delete the database and install it again) (~3 hours)
 
 2. Run `create_matrix_master.py` in the `database` folder (i.e. `python create_matrix_master.py`) (~5 hours)
 
