@@ -17,6 +17,8 @@ Python 3.8 is required, as well as:
 
 -  [`sklearn 0.22`](https://scikit-learn.org/0.15/install.html)
 
+- [`requests 2.22.0`](https://requests.readthedocs.io/en/master/)
+
 <h3> Installing the database </h3>
 A copy of PubMed is required for the program to run. Follow the following steps to download and parse the database for usage, or to update the database to the newest version of PubMed.
 
