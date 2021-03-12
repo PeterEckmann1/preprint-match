@@ -1,0 +1,9 @@
+services:
+  database:
+    image: postgres
+    environment:
+      - POSTGRES_PASSWORD=testpass
+    ports:
+      - 5434:5432
+    volumes:
+      - ./postgresql:/var/lib/postgresql/data
