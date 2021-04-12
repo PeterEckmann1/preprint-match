@@ -4,7 +4,8 @@ from secrets import token_urlsafe
 import numpy as np
 import psycopg2.extras
 
-#todo lowercase only preprocessing DONT FORGET TO ADD, literally just check if first letters of abstract match using postgres, use bigger vector length
+#todo lowercase only preprocessing
+#todo make sure input vectors are not all zeroes
 
 db = Database('postgres', 'testpass', port=5434)
 conn1 = psycopg2.connect(dbname='postgres', user='postgres', password='testpass', port=5434)
@@ -18,7 +19,7 @@ cur1 = conn1.cursor()
 matcher = Matcher('data', db)
 
 cur = db.conn.cursor(token_urlsafe(20))
-cur.execute("select articles.id, preprint_vectors.doi, preprint_vectors.title_vector, preprint_vectors.abstract_vector from preprint_vectors inner join prod.articles on articles.doi = preprint_vectors.doi order by random()")
+cur.execute("select articles.id, preprint_vectors.doi, preprint_vectors.title_vector, preprint_vectors.abstract_vector from preprint_vectors inner join prod.articles on articles.doi = preprint_vectors.doi where preprint_vectors.abstract_vector[1] != 0 order by random()")
 
 step = 1000
 dois = []
@@ -60,8 +61,7 @@ left join papers as algorithm
 left join papers as biorxiv
 	on biorxiv.doi = article_publications.doi
 where 
-	article_publications.doi is not null 
+	biorxiv.doi is not null
 	and algorithm.doi is null
-	and biorxiv.title is not null
 	and (is_valid or is_valid is null)
 """

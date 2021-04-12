@@ -109,7 +109,6 @@ class Database:
 
     def generate_matrices(self, folder):
         self._generate_matrices(folder, 'abstract')
-        exit()
         self._generate_matrices(folder, 'title')
 
     def get_metadata_from_id(self, id):

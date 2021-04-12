@@ -1,0 +1,30 @@
+<!doctype html>
+
+<style>
+    .main {
+        margin: auto;
+        max-width: 30%;
+    }
+
+    .center {
+        margin: auto;
+        text-align: center;
+    }
+</style>
+
+<div class="main">
+    <div class="center">
+        <h1>PreprintMatch</h1>
+    </div>
+    <p>Enter the DOI or link of a preprint to find its corresponding paper, or the DOI of a paper to find its corresponding preprint. Currently supports bioRxiv preprints and PubMed-indexed papers.</p>
+    <div class="center">
+        <form method="post">
+            <input name="doi" size="50">
+            <input type="submit" value="Find matches">
+        </form>
+    </div>
+
+    {% if error %}
+     <p><strong> {{ message }} </strong></p>
+    {% endif %}
+</div>

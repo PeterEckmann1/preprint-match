@@ -81,8 +81,13 @@ class Matcher:
             matches = self._match(a_vectors[i: i + step], b_vectors, matches, i)
         return matches
 
-    def _first_n(self, text, n):
-        return ' '.join([word for word in text.split() if '(' not in word][:n])
+    def _abstract_first_n(self, text, n):
+        return ' '.join([word[:5] for word in text.split() if ('(' not in word and word.lower() not in {'a', 'an', 'the', 'background:', 'introduction:'})][:n])
+
+    def _title_colon(self, text):
+        if len(text.split()) == 0 or ':' not in text.split()[0]:
+            return None
+        return text.split()[0]
 
     def match(self, dois, abstract_vectors, title_vectors, cur, step, k, threads=config.NUMBA_NUM_THREADS):    #todo output dois instead of i
         cur.execute("select doi, substring(authors.name from '\w+$') from prod.articles inner join prod.article_authors on article_authors.article = articles.id inner join prod.authors on authors.id = article_authors.author where articles.doi in %s", (tuple(dois),))
@@ -105,19 +110,15 @@ class Matcher:
             best_guess = (i, None, None, None)
             cur.execute("select abstract, title from prod.articles where doi = %s", (dois[i],))
             abstract, title = cur.fetchone()
-            preprint_abstract_first_n = self._first_n(abstract, 5)
-            preprint_title_first_n = self._first_n(title, 1)
+            preprint_first_n = self._abstract_first_n(abstract, 7)
+            preprint_title_colon = self._title_colon(title)
             for id in all_ids:
                 abstract_index = np.where(abstract_matches[i,:,1] == id)[0]
                 title_index = np.where(title_matches[i,:,1] == id)[0]
                 abstract_similarity = 0
                 title_similarity = 0
-                try:
-                    if abstract_index:
-                        abstract_similarity = abstract_matches[i][abstract_index][0][0]
-                except:
-                    print(dois[i], id, abstract_matches[i])
-                    raise Exception()
+                if abstract_index:
+                    abstract_similarity = abstract_matches[i][abstract_index][0][0]
                 if title_index:
                     title_similarity = title_matches[i][title_index][0][0]
                 if self.classifier.predict(abstract_similarity, title_similarity):
@@ -133,12 +134,12 @@ class Matcher:
                         author_similarity = 0
                     cur.execute("select abstract, title from papers where id = %s", (int(id),))
                     abstract, title = cur.fetchone()
-                    paper_abstract_first_n = self._first_n(abstract, 5)
-                    paper_title_first_n = self._first_n(title, 1)
-                    if preprint_abstract_first_n == paper_abstract_first_n:
+                    paper_first_n = self._abstract_first_n(abstract, 7)
+                    paper_title_colon = self._title_colon(title)
+                    if preprint_first_n.lower() == paper_first_n.lower() or (preprint_title_colon and paper_title_colon and preprint_title_colon == paper_title_colon):
                         best_guess = (i, int(id), abstract_similarity, title_similarity)
                         continue                                                      #todo v change back to 0.005 or 0.01 if doesn't work
-                    if self.classifier.predict(abstract_similarity + author_similarity * 0.015, title_similarity + author_similarity * 0.03 + (0.05 if paper_title_first_n == preprint_title_first_n else 0)):
+                    if self.classifier.predict(abstract_similarity + author_similarity * 0.01, title_similarity + author_similarity * 0.03):
                         best_guess = (i, int(id), abstract_similarity, title_similarity)
             matches.append(best_guess)
         return matches
