@@ -26,8 +26,7 @@ class Classifier:
 
 
 class Matcher:
-    def __init__(self, folder, db):
-        self.db = db
+    def __init__(self, folder):
         self.folder = folder
         self.abstract_ids, self.abstract_row_count = self._load(folder, 'abstract')
         self.title_ids, self.title_row_count = self._load(folder, 'title')
@@ -89,32 +88,42 @@ class Matcher:
             return None
         return text.split()[0]
 
-    def match(self, dois, abstract_vectors, title_vectors, cur, step, k, threads=config.NUMBA_NUM_THREADS):    #todo output dois instead of i
-        cur.execute("select doi, substring(authors.name from '\w+$') from prod.articles inner join prod.article_authors on article_authors.article = articles.id inner join prod.authors on authors.id = article_authors.author where articles.doi in %s", (tuple(dois),))
-        preprint_authors = {}
-        for doi, name in cur:
-            if doi not in preprint_authors:
-                preprint_authors[doi] = set()
-            preprint_authors[doi].add(name)
-        for doi in dois:
-            if doi not in preprint_authors:
-                preprint_authors[doi] = set()
+    def _get_author_similarity(self, paper_authors, preprint_authors, in_main_loop):
+        if not in_main_loop:
+            if len(paper_authors) < 2:
+                return 1
+            for term in ['group', 'consortium', 'investigators']:
+                if term in [author.lower() for author in preprint_authors] and len(set(paper_authors).intersection(preprint_authors)) / len(set(paper_authors).union(preprint_authors)) > 0.1:
+                    return 1
+        try:
+            first_authors_match = paper_authors[0] == preprint_authors[0]
+        except:
+            first_authors_match = False
+        try:
+            return len(set(paper_authors).intersection(preprint_authors)) / len(set(paper_authors).union(preprint_authors)) + (1 if first_authors_match and in_main_loop else 0)
+        except ZeroDivisionError:
+            print('zero division')
+            return 0
+
+    def match(self, dois, authors, abstracts, titles, abstract_vectors, title_vectors, cur, step, k, threads=config.NUMBA_NUM_THREADS, abstract_matches=None, title_matches=None):    #todo output dois instead of i
+        #authors is a dict of dois to sets of author last names
         set_num_threads(threads)
         matches = []
-        abstract_matches = self._match_field(self.abstract_row_count, abstract_vectors, step, k, True)
-        abstract_matches[:,:,1] = self.abstract_ids[abstract_matches[:,:,1].astype(np.int32)]
-        title_matches = self._match_field(self.title_row_count, title_vectors, step, k, False)
-        title_matches[:,:,1] = self.title_ids[title_matches[:,:,1].astype(np.int32)]
+        if abstract_matches is None:
+            abstract_matches = self._match_field(self.abstract_row_count, abstract_vectors, step, k, True)
+            abstract_matches[:,:,1] = self.abstract_ids[abstract_matches[:,:,1].astype(np.int32)]
+            title_matches = self._match_field(self.title_row_count, title_vectors, step, k, False)
+            title_matches[:,:,1] = self.title_ids[title_matches[:,:,1].astype(np.int32)]
+
         for i in tqdm(range(abstract_matches.shape[0]), desc='determining matches '):
             all_ids = list(set(abstract_matches[i,:,1]).union(title_matches[i,:,1]))
             best_guess = (i, None, None, None)
-            cur.execute("select abstract, title from prod.articles where doi = %s", (dois[i],))
-            abstract, title = cur.fetchone()
+            abstract, title = abstracts[dois[i]], titles[dois[i]]
             preprint_first_n = self._abstract_first_n(abstract, 7)
             preprint_title_colon = self._title_colon(title)
             for id in all_ids:
-                abstract_index = np.where(abstract_matches[i,:,1] == id)[0]
-                title_index = np.where(title_matches[i,:,1] == id)[0]
+                abstract_index = list(np.where(abstract_matches[i,:,1] == id)[0])
+                title_index = list(np.where(title_matches[i,:,1] == id)[0])
                 abstract_similarity = 0
                 title_similarity = 0
                 if abstract_index:
@@ -125,21 +134,52 @@ class Matcher:
                     if not best_guess[1] or (best_guess[1] and ((best_guess[2] + best_guess[3]) < (abstract_similarity + title_similarity))):
                         best_guess = (i, int(id), abstract_similarity, title_similarity)
                 elif not best_guess[1]:
-                    cur.execute("select substring(author from '\w+$') from authors where paper = %s", (int(id),))
-                    paper_authors = {row[0] for row in cur}
-                    try:
-                        author_similarity = len(paper_authors.intersection(preprint_authors[dois[i]])) / len(paper_authors.union(preprint_authors[dois[i]]))
-                    except ZeroDivisionError:
-                        print('zero division')
-                        author_similarity = 0
+                    cur.execute("select substring(name from '\w+$') from authors where paper = %s", (int(id),))
+                    paper_authors = [row[0] for row in cur]
+                    author_similarity = self._get_author_similarity(paper_authors, authors[dois[i]], True)
+                    cur.execute("select substring(name from '^\w+') from authors where paper = %s", (int(id),))
+                    paper_author_first_names = [row[0] for row in cur]
+                    if self._get_author_similarity(paper_author_first_names, authors[dois[i]], True) > author_similarity:
+                        author_similarity = self._get_author_similarity(paper_author_first_names, authors[dois[i]], True)
+
                     cur.execute("select abstract, title from papers where id = %s", (int(id),))
                     abstract, title = cur.fetchone()
                     paper_first_n = self._abstract_first_n(abstract, 7)
                     paper_title_colon = self._title_colon(title)
                     if preprint_first_n.lower() == paper_first_n.lower() or (preprint_title_colon and paper_title_colon and preprint_title_colon == paper_title_colon):
                         best_guess = (i, int(id), abstract_similarity, title_similarity)
-                        continue                                                      #todo v change back to 0.005 or 0.01 if doesn't work
+                        continue
                     if self.classifier.predict(abstract_similarity + author_similarity * 0.01, title_similarity + author_similarity * 0.03):
                         best_guess = (i, int(id), abstract_similarity, title_similarity)
+            if best_guess[1] and not (best_guess[2] > 0.999 or best_guess[3] > 0.999):
+                cur.execute("select substring(name from '\w+$') from authors where paper = %s", (best_guess[1],))
+                paper_authors = [row[0] for row in cur]
+                author_similarity = self._get_author_similarity(paper_authors, authors[dois[i]], False)
+                cur.execute("select substring(name from '^\w+') from authors where paper = %s", (best_guess[1],))
+                paper_author_first_names = [row[0] for row in cur]
+                if self._get_author_similarity(paper_author_first_names, authors[dois[i]], False) > author_similarity:
+                    author_similarity = self._get_author_similarity(paper_author_first_names, authors[dois[i]], False)
+                if author_similarity < 0.33:
+                    best_guess = (i, None, None, None)
+            if not best_guess[1] and len(authors[dois[i]]) > 3:
+                author_string = ''.join(authors[dois[i]])
+                cur.execute('select paper from author_strings where author_string = %s', (author_string,))
+                rows = cur.fetchall()
+                if len(rows) == 1:
+                    best_guess = (i, rows[0][0], 0, 0)
             matches.append(best_guess)
         return matches
+
+
+if __name__ == '__main__':
+    import pickle
+    import psycopg2
+    matcher = Matcher('../data')
+    dois, authors, abstracts, titles, abstract_matches, title_matches, step, k = pickle.loads(open('temp.pickle', 'rb').read())
+    conn = psycopg2.connect(dbname='postgres', user='postgres', password='testpass', port=5434)
+    cur = conn.cursor()
+    for i, paper, abstract_similarity, title_similarity in matcher.match(dois, authors, abstracts, titles, None, None, cur, step, k, abstract_matches=abstract_matches, title_matches=title_matches):
+        if paper:
+            cur.execute('select doi from papers where id = %s', (paper,))
+            paper = cur.fetchone()[0]
+        print(dois[i], paper)

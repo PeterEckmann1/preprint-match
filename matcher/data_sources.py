@@ -1,7 +1,6 @@
 import lxml.etree as ET
 import datetime
-from multiprocessing import Pool
-import psycopg2
+from tqdm import tqdm
 from secrets import token_urlsafe
 
 
@@ -56,8 +55,6 @@ class PubMed:
                 paper['types'].append(type.text)
             if 'Comment' in paper['types'] or 'Published Erratum' in paper['types'] or 'Review' in paper['types'] or 'Preprint' in paper['types']:
                 continue
-            for affiliation in article.iter('Affiliation'):
-                paper['affiliations'].append(affiliation.text)
             for data_field in article:
                 if data_field.tag == 'MedlineCitation':
                     for field in data_field:
@@ -84,6 +81,13 @@ class PubMed:
                                             paper['authors'][i] = fore_name.text + ' ' + paper['authors'][i]
                                         except TypeError:
                                             pass
+                                    for affiliation in subfield.iter('Affiliation'):
+                                        paper['affiliations'].append(affiliation.text)
+                                        while len(paper['affiliations']) < len(paper['authors']):
+                                            paper['affiliations'].append(None)
+                                        break
+                                    if not paper['affiliations']:
+                                        paper['affiliations'] = [None for _ in range(len(paper['authors']))]
                                 if subfield.tag == 'ArticleTitle':
                                     paper['title'] = ET.tostring(subfield, encoding='utf-8', method='text').decode('utf-8').strip().replace('\n', ' ')
                                 if subfield.tag == 'Language':
@@ -97,18 +101,19 @@ class PubMed:
                 if data_field.tag == 'PubmedData':
                     for id in data_field.iter('ArticleId'):
                         if id.attrib['IdType'] == 'doi':
-                            paper['doi'] = id.text
+                            paper['doi'] = id.text.lower()
+                            break
             if skip or paper['doi'] == '':
                 continue
             papers.append(paper)
         return papers
 
     def stream_papers(self):
-        with Pool(1) as pool:
-            for i, paper_set in enumerate(pool.imap(self._parse, self.files)):
-                for paper in paper_set:
-                    yield paper
-                self.processed_files.append(self.files[i])
+        for i, file in tqdm(enumerate(self.files), total=len(self.files)):
+            paper_set = self._parse(file)
+            for paper in paper_set:
+                yield paper
+            self.processed_files.append(self.files[i])
 
 
 class bioRxiv:

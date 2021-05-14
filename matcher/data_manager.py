@@ -4,10 +4,8 @@ import os
 from secrets import token_urlsafe
 import fasttext
 import numpy as np
-import string
-from tqdm import tqdm
 
-#todo add tqdm for applying word vectors and others
+
 class Database:
     def __init__(self, dbname, password, user='postgres', port=5432):
         self.conn = psycopg2.connect(dbname=dbname, user=user, password=password, port=port)
@@ -19,32 +17,33 @@ class Database:
         self.vectors = None
 
     def _create_tables(self):
-        self.cur.execute('create table if not exists papers (id integer primary key generated always as identity, doi text, source text, title text, abstract text, published date, title_vector real[], abstract_vector real[]); create index if not exists doi_index on papers(doi)')
-        self.cur.execute('create table if not exists authors (paper integer, author text); create index if not exists paper_index on authors(paper)')
+        self.cur.execute('create table if not exists papers (id integer primary key generated always as identity, doi text, pmid integer, title text, abstract text, published date, title_vector real[], abstract_vector real[]); create index if not exists doi_index on papers(doi)')
+        self.cur.execute('create table if not exists authors (paper integer, name text, affiliation text); create index if not exists paper_index on authors(paper)')
         self.conn.commit()
 
-    def insert(self, doi, title, abstract, authors, date=None, source=None):
+    def insert(self, doi, title, abstract, authors, affiliations, date=None, pmid=None):
         if doi in self.doi_hashmap:
             self.paper_queue[self.doi_hashmap[doi]] = None
         self.doi_hashmap[doi] = len(self.paper_queue)
-        self.paper_queue.append((doi, source, title, abstract, date))
-        self.author_queue.append(authors)
+        self.paper_queue.append((doi, pmid, title, abstract, date))
+        self.author_queue.append(((authors[i], affiliations[i]) for i in range(len(authors))))
         if len(self.paper_queue) > 9999:
             self.commit()
 
     def commit(self):
         if len(self.paper_queue) == 0:
             return
+        self.author_queue = [self.author_queue[i] for i in range(len(self.author_queue)) if self.paper_queue[i]]
         self.paper_queue = [row for row in self.paper_queue if row]
         self.cur.execute('delete from papers where doi in %s returning id', (tuple(row[0] for row in self.paper_queue),))
         delete_ids = self.cur.fetchall()
         if len(delete_ids) != 0:
             self.cur.execute('delete from authors where paper in %s', (tuple(row[0] for row in delete_ids),))
-        self.cur.execute('insert into papers (doi, source, title, abstract, published) values ' + ', '.join(self.cur.mogrify('(%s, %s, %s, %s, %s)', row).decode('utf-8') for row in self.paper_queue) + 'returning id')
+        self.cur.execute('insert into papers (doi, pmid, title, abstract, published) values ' + ', '.join(self.cur.mogrify('(%s, %s, %s, %s, %s)', row).decode('utf-8') for row in self.paper_queue) + 'returning id')
         author_rows = []
         for i, id in enumerate([row[0] for row in self.cur.fetchall()]):
-            for author in self.author_queue[i]:
-                author_rows.append((id, author))
+            for author, affiliation in self.author_queue[i]:
+                author_rows.append((id, author, affiliation))
         psycopg2.extras.execute_values(self.cur, 'insert into authors values %s', author_rows, page_size=1000)
         del author_rows
         self.paper_queue = []
@@ -114,7 +113,7 @@ class Database:
     def get_metadata_from_id(self, id):
         self.cur.execute('select * from papers where id = %s', (id,))
         row = self.cur.fetchone()
-        return {'doi': row[1], 'source': row[2], 'title': row[3], 'abstract': row[4], 'date': row[5]}
+        return {'doi': row[1], 'pmid': row[2], 'title': row[3], 'abstract': row[4], 'date': row[5]}
 
 
 class Vectors:
