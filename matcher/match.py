@@ -92,7 +92,7 @@ class Matcher:
         if not in_main_loop:
             if len(paper_authors) < 2:
                 return 1
-            for term in ['group', 'consortium', 'investigators']:
+            for term in ['group', 'consortium', 'investigators', 'team']:
                 if term in [author.lower() for author in preprint_authors] and len(set(paper_authors).intersection(preprint_authors)) / len(set(paper_authors).union(preprint_authors)) > 0.1:
                     return 1
         try:
@@ -131,7 +131,7 @@ class Matcher:
                 if title_index:
                     title_similarity = title_matches[i][title_index][0][0]
                 if self.classifier.predict(abstract_similarity, title_similarity):
-                    if not best_guess[1] or (best_guess[1] and ((best_guess[2] + best_guess[3]) < (abstract_similarity + title_similarity))):
+                    if not best_guess[1] or (best_guess[1] and best_guess[3] < title_similarity):
                         best_guess = (i, int(id), abstract_similarity, title_similarity)
                 elif not best_guess[1]:
                     cur.execute("select substring(name from '\w+$') from authors where paper = %s", (int(id),))
@@ -141,7 +141,6 @@ class Matcher:
                     paper_author_first_names = [row[0] for row in cur]
                     if self._get_author_similarity(paper_author_first_names, authors[dois[i]], True) > author_similarity:
                         author_similarity = self._get_author_similarity(paper_author_first_names, authors[dois[i]], True)
-
                     cur.execute("select abstract, title from papers where id = %s", (int(id),))
                     abstract, title = cur.fetchone()
                     paper_first_n = self._abstract_first_n(abstract, 7)
@@ -159,7 +158,10 @@ class Matcher:
                 paper_author_first_names = [row[0] for row in cur]
                 if self._get_author_similarity(paper_author_first_names, authors[dois[i]], False) > author_similarity:
                     author_similarity = self._get_author_similarity(paper_author_first_names, authors[dois[i]], False)
+                    paper_authors = paper_author_first_names
                 if author_similarity < 0.33:
+                    best_guess = (i, None, None, None)
+                elif len(paper_authors) > 1 and  authors[dois[i]][0] not in paper_authors[:5] and authors[dois[i]][1] not in paper_authors[:5]:
                     best_guess = (i, None, None, None)
             if not best_guess[1] and len(authors[dois[i]]) > 3:
                 author_string = ''.join(authors[dois[i]])
@@ -167,6 +169,15 @@ class Matcher:
                 rows = cur.fetchall()
                 if len(rows) == 1:
                     best_guess = (i, rows[0][0], 0, 0)
+                elif len(authors[dois[i]]) > 10:
+                    cur.execute('select paper from author_strings where left(author_string, 10) = left(%s, 10)', (author_string,))
+                    for row in cur:
+                        paper = row[0]
+                        cur.execute("select substring(name from '\w+$') from authors where paper = %s", (paper,))
+                        paper_authors = [row[0] for row in cur if row[0].lower() not in ['group', 'consortium', 'investigators', 'team']]
+                        authors[dois[i]] = [author for author in authors[dois[i]] if author.lower() not in ['group', 'consortium', 'investigators', 'team']]
+                        if paper_authors[:3] == authors[dois[i]][:3] and paper_authors[-3:] == authors[dois[i]][-3:]:
+                            best_guess = (i, paper, 0, 0)
             matches.append(best_guess)
         return matches
 
@@ -175,7 +186,7 @@ if __name__ == '__main__':
     import pickle
     import psycopg2
     matcher = Matcher('../data')
-    dois, authors, abstracts, titles, abstract_matches, title_matches, step, k = pickle.loads(open('temp.pickle', 'rb').read())
+    dois, authors, abstracts, titles, abstract_matches, title_matches, step, k = pickle.loads(open('../matcher/temp.pickle', 'rb').read())
     conn = psycopg2.connect(dbname='postgres', user='postgres', password='testpass', port=5434)
     cur = conn.cursor()
     for i, paper, abstract_similarity, title_similarity in matcher.match(dois, authors, abstracts, titles, None, None, cur, step, k, abstract_matches=abstract_matches, title_matches=title_matches):
