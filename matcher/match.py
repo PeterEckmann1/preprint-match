@@ -65,7 +65,7 @@ class Matcher:
                     dot += a[i][k] * b[j][k]
                 similarity = dot / (a_norms[i] * b_norms[j])
                 for k in range(matches.shape[1]):
-                    if similarity > matches[j][k][0] and (k + 1 == matches.shape[1] or similarity < matches[j][k + 1][0]): #todo problem is same id is showing up for all parts of array
+                    if similarity > matches[j][k][0] and (k + 1 == matches.shape[1] or similarity < matches[j][k + 1][0]):
                         for m in range(k):
                             matches[j][m] = matches[j][m + 1]
                         matches[j][k][0] = similarity
@@ -74,7 +74,7 @@ class Matcher:
         return matches
 
     def _match_field(self, a_vector_count, b_vectors, step, k, is_abstract):
-        matches = np.zeros((b_vectors.shape[0], k, 2)) #todo should technically be two different dtypes, try to do title vectors with abstract model
+        matches = np.zeros((b_vectors.shape[0], k, 2))
         for i in tqdm(range(0, a_vector_count, step), desc=f"matching {'abstract' if is_abstract else 'title   '}   "):
             a_vectors = self._refresh_memmaps(is_abstract)
             matches = self._match(a_vectors[i: i + step], b_vectors, matches, i)
@@ -114,6 +114,9 @@ class Matcher:
             abstract_matches[:,:,1] = self.abstract_ids[abstract_matches[:,:,1].astype(np.int32)]
             title_matches = self._match_field(self.title_row_count, title_vectors, step, k, False)
             title_matches[:,:,1] = self.title_ids[title_matches[:,:,1].astype(np.int32)]
+
+        # pickle.dump((dois, authors, abstracts, titles, abstract_matches, title_matches, step, k), open('../matcher/temp1.pickle', 'wb'))
+        # exit()
 
         for i in tqdm(range(abstract_matches.shape[0]), desc='determining matches '):
             all_ids = list(set(abstract_matches[i,:,1]).union(title_matches[i,:,1]))
@@ -158,10 +161,7 @@ class Matcher:
                 paper_author_first_names = [row[0] for row in cur]
                 if self._get_author_similarity(paper_author_first_names, authors[dois[i]], False) > author_similarity:
                     author_similarity = self._get_author_similarity(paper_author_first_names, authors[dois[i]], False)
-                    paper_authors = paper_author_first_names
                 if author_similarity < 0.33:
-                    best_guess = (i, None, None, None)
-                elif len(paper_authors) > 1 and  authors[dois[i]][0] not in paper_authors[:5] and authors[dois[i]][1] not in paper_authors[:5]:
                     best_guess = (i, None, None, None)
             if not best_guess[1] and len(authors[dois[i]]) > 3:
                 author_string = ''.join(authors[dois[i]])
@@ -181,16 +181,33 @@ class Matcher:
             matches.append(best_guess)
         return matches
 
+    def match_field_only(self, field, field_matches):
+        matches = []
+        for i in range(field_matches.shape[0]):
+            if field_matches[i][-1][0] > (0.99 if field == 'abstract' else 0.96):
+                matches.append((i, int(field_matches[i][-1][1])))
+            else:
+                matches.append((i, None))
+        return matches
+
 
 if __name__ == '__main__':
     import pickle
     import psycopg2
     matcher = Matcher('../data')
-    dois, authors, abstracts, titles, abstract_matches, title_matches, step, k = pickle.loads(open('../matcher/temp.pickle', 'rb').read())
+    dois, authors, abstracts, titles, abstract_matches, title_matches, step, k = pickle.loads(open('../matcher/temp1.pickle', 'rb').read())
     conn = psycopg2.connect(dbname='postgres', user='postgres', password='testpass', port=5434)
     cur = conn.cursor()
+    # for i, paper in matcher.match_field_only('title', title_matches):
+    #     cur.execute('select id from prod.articles where doi = %s', (dois[i],))
+    #     cur.execute('insert into matches values (%s, %s, %s, %s)', (cur.fetchone()[0], paper, 0, 0))
+    # conn.commit()
+    # exit()
     for i, paper, abstract_similarity, title_similarity in matcher.match(dois, authors, abstracts, titles, None, None, cur, step, k, abstract_matches=abstract_matches, title_matches=title_matches):
-        if paper:
-            cur.execute('select doi from papers where id = %s', (paper,))
-            paper = cur.fetchone()[0]
-        print(dois[i], paper)
+        # if paper:
+        #     cur.execute('select doi from papers where id = %s', (paper,))
+        #     paper = cur.fetchone()[0]
+        # print(dois[i], paper)
+        cur.execute('select id from prod.articles where doi = %s', (dois[i],))
+        cur.execute('insert into matches values (%s, %s, %s, %s)', (cur.fetchone()[0], paper, 0, 0))
+    conn.commit()
