@@ -102,10 +102,9 @@ class Matcher:
         try:
             return len(set(paper_authors).intersection(preprint_authors)) / len(set(paper_authors).union(preprint_authors)) + (1 if first_authors_match and in_main_loop else 0)
         except ZeroDivisionError:
-            print('zero division')
             return 0
 
-    def match(self, dois, authors, abstracts, titles, abstract_vectors, title_vectors, cur, step, k, threads=config.NUMBA_NUM_THREADS, abstract_matches=None, title_matches=None):    #todo output dois instead of i
+    def match(self, dois, authors, abstracts, titles, abstract_vectors, title_vectors, cur, step, k, threads=config.NUMBA_NUM_THREADS, abstract_matches=None, title_matches=None, chunk=None):    #todo output dois instead of i
         #authors is a dict of dois to sets of author last names
         set_num_threads(threads)
         matches = []
@@ -115,10 +114,10 @@ class Matcher:
             title_matches = self._match_field(self.title_row_count, title_vectors, step, k, False)
             title_matches[:,:,1] = self.title_ids[title_matches[:,:,1].astype(np.int32)]
 
-        # pickle.dump((dois, authors, abstracts, titles, abstract_matches, title_matches, step, k), open('../matcher/temp1.pickle', 'wb'))
+        # pickle.dump((dois, authors, abstracts, titles, abstract_matches, title_matches, step, k), open(f'out/dump{chunk}.pickle', 'wb'))
         # exit()
 
-        for i in tqdm(range(abstract_matches.shape[0]), desc='determining matches '):
+        for i in tqdm(range(abstract_matches.shape[0]), desc='determining matches ', smoothing=0):
             all_ids = list(set(abstract_matches[i,:,1]).union(title_matches[i,:,1]))
             best_guess = (i, None, None, None)
             abstract, title = abstracts[dois[i]], titles[dois[i]]
@@ -174,7 +173,7 @@ class Matcher:
                     for row in cur:
                         paper = row[0]
                         cur.execute("select substring(name from '\w+$') from authors where paper = %s", (paper,))
-                        paper_authors = [row[0] for row in cur if row[0].lower() not in ['group', 'consortium', 'investigators', 'team']]
+                        paper_authors = [row[0] for row in cur if (row[0] and row[0].lower() not in ['group', 'consortium', 'investigators', 'team'])]
                         authors[dois[i]] = [author for author in authors[dois[i]] if author.lower() not in ['group', 'consortium', 'investigators', 'team']]
                         if paper_authors[:3] == authors[dois[i]][:3] and paper_authors[-3:] == authors[dois[i]][-3:]:
                             best_guess = (i, paper, 0, 0)
