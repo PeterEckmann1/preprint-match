@@ -26,7 +26,7 @@ if __name__ == '__main__':
     db.commit()
     processed_files = list(set(pubmed.processed_files).union(processed_files))
     open('processed_files.json', 'w').write(json.dumps(processed_files))
-    db.generate_word_vectors('data', 1)
+    db.generate_word_vectors('data', 1, 1)
     db.apply_word_vectors('data')
     db.generate_matrices('data')
     matcher = Matcher('data', db)
