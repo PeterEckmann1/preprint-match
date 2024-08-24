@@ -31,7 +31,3 @@ if __name__ == '__main__':
     db.generate_matrices('data')
     matcher = Matcher('data', db)
     vectors = Vectors('data')
-
-    abstract_vector = vectors.abstract_text_to_vector('In this study of the binding properties of inositol hexaphosphate and 2,3-bisphosphoglycerate to chicken and human deoxyhemoglobin and carboxyhemoglobin were compared. It appeared that in all cases the binding to chicken hemoglobin is much stronger than to human hemoglobin. This is very probably due to the fact that 4 out of the 12 residues, responsible for the binding of phosphates in chicken hemoglobin, are arginines. These are absent in human hemoglobin, where the binding site is made up to only 8 residues. For chicken hemoglobin one strong binding site could be observed in both unliganded and liganded hemoglobin. From these observations we conclude that the same binding site is involved in both the oxy- and deoxy structure showing different affinity to phosphates in the two conformational states. For human hemoglobin we reached the same conclusion.')
-
-    matcher.match(np.array([abstract_vector]), 1000000)
