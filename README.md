@@ -20,7 +20,7 @@ preprint-match was tested with python 3.7, but it may work with other python3 ve
 
 ## Usage
 
-First, run `docker compose up -d` in the home directory of this repository to start a postgres instance in docker. Then, a local copy of PubMed must be created. Call the script `python load_pubmed.py` to download PubMed files one-by-one through the FTP service, and then preprocess the results and save them in the database. These steps must only be performed once.
+First, run `docker compose up -d` in the home directory of this repository to start a postgres instance in docker. Then, a local copy of PubMed must be created. Call the script `python load_pubmed.py` to download PubMed files one-by-one through the FTP service, and then preprocess the results and save them in the database. These steps must only be performed once before matching papers, and then periodically after that if desired to update the database.
 
 To match a preprint and paper, use the API provided in `match_from_doi.py`. It contains a function, `match_from_doi`, that takes a list of preprint DOIs and returns a list of matching paper DOIs. Example usage:
 ```
