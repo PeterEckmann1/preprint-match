@@ -19,7 +19,7 @@ if __name__ == '__main__':
     db = Database('postgres', 'testpass', port=5434)
     db.delete()
     for i, paper in enumerate(pubmed.stream_papers()):
-        db.insert(paper['doi'], paper['title'], paper['abstract'], paper['authors'], paper['date'])
+        db.insert(paper['doi'], paper['title'], paper['abstract'], paper['authors'], paper['affiliations'], date=paper['date'], pmid=paper['pmid'])
         if i % 10001 == 0:
             processed_files = list(set(pubmed.processed_files).union(processed_files))
             open('processed_files.json', 'w').write(json.dumps(processed_files))
