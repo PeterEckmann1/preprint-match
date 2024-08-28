@@ -29,5 +29,3 @@ if __name__ == '__main__':
     db.generate_word_vectors('data', 1, 1)
     db.apply_word_vectors('data')
     db.generate_matrices('data')
-    matcher = Matcher('data', db)
-    vectors = Vectors('data')
